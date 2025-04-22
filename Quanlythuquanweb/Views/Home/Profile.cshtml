@@ -1,0 +1,396 @@
+﻿
+@{
+    ViewBag.Title = "Profile";
+}
+@{
+    Layout = null;
+}
+
+    <meta charset="utf-8" />
+    <title>Thông tin cá nhân - Lịch sử hoạt động | THUQUAN.COM</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5dc;
+        }
+
+        /* Top bar */
+        .top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 30px;
+            background-color: rgba(164, 104, 46, 0.85);
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            position: relative;
+            z-index: 10;
+        }
+        .top-bar .logo {
+            font-family: Georgia, serif;
+            font-size: 24px;
+            opacity: 0.7;
+        }
+        .top-bar nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: 500;
+        }
+        .top-bar nav a:hover {
+            text-decoration: underline;
+        }
+        .top-bar .icons {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .top-bar .icons .bell {
+            width: 22px;
+            height: 22px;
+            cursor: pointer;
+            filter: brightness(0) invert(1);
+        }
+        .top-bar .icons .profile-circle {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: #cbb994;
+            cursor: pointer;
+        }
+
+        /* Header Banner */
+        .header-banner {
+            background: url('https://i.imgur.com/n0vYqTm.jpg') no-repeat center center/cover;
+            position: relative;
+            color: white;
+            padding: 40px 60px;
+            min-height: 300px;
+            display: flex;
+            align-items: center;
+        }
+        .header-banner .profile-img {
+            flex-shrink: 0;
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            background: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            margin-right: 50px;
+        }
+        .header-banner .profile-img img {
+            width: 130px;
+            height: 130px;
+            object-fit: contain;
+        }
+        .header-banner .profile-info {
+            max-width: 600px;
+            font-size: 18px;
+        }
+        .header-banner .profile-info h1 {
+            margin: 0 0 12px 0;
+            font-family: "Georgia", serif;
+            font-size: 38px;
+            font-weight: 600;
+        }
+        .header-banner .profile-info p {
+            margin: 5px 0;
+        }
+        .header-banner .section-label {
+            font-size: 14px;
+            font-weight: 400;
+            letter-spacing: 1px;
+            margin-bottom: 6px;
+            opacity: 0.8;
+        }
+        .header-banner .border-line {
+            position: absolute;
+            bottom: 18px;
+            left: 60px;
+            width: 260px;
+            height: 1px;
+            background-color: white;
+            opacity: 0.6;
+        }
+
+        /* Main content */
+        .main-content {
+            display: flex;
+            margin: 30px 60px 60px 60px;
+            background-color: #fffdeb;
+            border: 1px solid #ccc;
+            padding: 15px;
+            min-height: 280px;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 200px;
+            background-color: #ac7f49;
+            border-radius: 4px 0 0 4px;
+            box-shadow: inset -3px 0 4px rgba(0,0,0,0.15);
+            display: flex;
+            flex-direction: column;
+        }
+        .sidebar button {
+            background-color: #ac7f49;
+            border: none;
+            padding: 15px 20px;
+            font-weight: 600;
+            font-size: 16px;
+            color: #4f2200;
+            text-align: left;
+            cursor: pointer;
+            border-left: 5px solid transparent;
+            transition: background-color 0.3s, border-left-color 0.3s, color 0.3s;
+        }
+        .sidebar button:hover {
+            background-color: #7a4406;
+            color: white;
+        }
+        .sidebar button.active {
+            background-color: #7a4406;
+            color: white;
+            border-left-color: #4a2400;
+        }
+
+        /* Content area */
+        .content-area {
+            flex-grow: 1;
+            padding-left: 30px;
+        }
+
+        /* Table */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 10px;
+        }
+        th, td {
+            border: 1px solid #999;
+            padding: 10px 15px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 16px;
+        }
+        th {
+            background-color: #bfbdb1;
+        }
+        td {
+            background-color: #fefefe;
+            font-weight: 500;
+        }
+
+        /* Buttons in table */
+        .detail-btn {
+            background-color: #7a4406;
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            font-size: 14px;
+            cursor: pointer;
+            border-radius: 2px;
+            transition: background-color 0.3s;
+        }
+        .detail-btn:hover {
+            background-color: #ac7f49;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2d1700;
+            color: #e3ddd0;
+            padding: 25px 60px;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 14px;
+        }
+        footer .footer-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        footer section {
+            max-width: 300px;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+        footer section h4 {
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        footer section a {
+            color: #cbb994;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 6px;
+            font-style: italic;
+        }
+        footer section a:hover {
+            text-decoration: underline;
+        }
+        footer .address-info {
+            font-style: italic;
+        }
+
+        .media(max-width: 900px) {
+            .main-content {
+                flex-direction: column;
+            }
+            .sidebar {
+                width: 100%;
+                flex-direction: row;
+                border-radius: 4px 4px 0 0;
+            }
+            .sidebar button {
+                flex-grow: 1;
+                text-align: center;
+                border-left: none;
+                border-bottom: 3px solid transparent;
+            }
+            .sidebar button.active {
+                border-left: none;
+                border-bottom: 3px solid #4a2400;
+            }
+            .content-area {
+                padding-left: 0;
+                margin-top: 25px;
+            }
+            footer .footer-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            footer section {
+                max-width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Bar -->
+    <header class="top-bar">
+        <div class="logo">THUQUAN.COM</div>
+        <nav>
+            <a href="#">Trang chủ</a>
+            <a href="#">Thủ tục</a>
+            <a href="#">Liên hệ</a>
+            <a href="#">Cá nhân</a>
+        </nav>
+        <div class="icons">
+            <svg class="bell" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M12 24c1.104 0 1.99-.896 1.99-2h-3.98c0 1.104.886 2 1.99 2zm6.364-6v-5c0-3.079-1.639-5.641-4.364-6.32v-.68c0-.826-.675-1.5-1.5-1.5s-1.5.674-1.5 1.5v.68c-2.725.679-4.364 3.241-4.364 6.32v5l-1.636 1.636v.364h15v-.364l-1.636-1.636z" /></svg>
+            <div class="profile-circle"></div>
+        </div>
+    </header>
+
+    <!-- Header Banner -->
+    <section class="header-banner" aria-label="Thông tin cá nhân">
+        <div class="profile-img" aria-hidden="true">
+            <img src="https://i.imgur.com/Qq1fjQm.png" alt="Avatar cá nhân" />
+        </div>
+        <div class="profile-info">
+            <div class="section-label">Thông tin cá nhân</div>
+            <h1>Your Profile</h1>
+            <p>Email: volehoangtan@gmail.com</p>
+            <p>Phone Number: 0988-980-000</p>
+            <p>Address: Ho Chi Minh City, VietNam</p>
+        </div>
+        <div class="border-line" aria-hidden="true"></div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Sidebar -->
+        <nav class="sidebar" aria-label="Dẫn hướng trang cá nhân">
+            <button class="active" type="button" aria-current="page">Thông tin cá nhân</button>
+            <button type="button">Lịch sử hoạt động</button>
+            <button type="button">Chỗ đã đặt</button>
+            <button type="button">Thiết bị đã đặt</button>
+        </nav>
+
+        <!-- Content Area -->
+        <section class="content-area" aria-labelledby="activity-title">
+            <h2 id="activity-title">Lịch sử hoạt động</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>ID HĐ</th>
+                        <th>Loại HĐ</th>
+                        <th>Thời gian</th>
+                        <th> </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>TV001</strong></td>
+                        <td><strong>HD001</strong></td>
+                        <td><strong>Đặt chỗ</strong></td>
+                        <td>00:02:40-16-03-2025</td>
+                        <td><button class="detail-btn" type="button">Chi tiết</button></td>
+                    </tr>
+                    <tr>
+                        <td><strong>TV001</strong></td>
+                        <td><strong>HD001</strong></td>
+                        <td><strong>Đặt chỗ</strong></td>
+                        <td>00:02:40-16-03-2025</td>
+                        <td><button class="detail-btn" type="button">Chi tiết</button></td>
+                    </tr>
+                    <tr>
+                        <td><strong>TV001</strong></td>
+                        <td><strong>HD001</strong></td>
+                        <td><strong>Đặt chỗ</strong></td>
+                        <td>00:02:40-16-03-2025</td>
+                        <td><button class="detail-btn" type="button">Chi tiết</button></td>
+                    </tr>
+                    <tr>
+                        <td><strong>TV001</strong></td>
+                        <td><strong>HD001</strong></td>
+                        <td><strong>Đặt chỗ</strong></td>
+                        <td>00:02:40-16-03-2025</td>
+                        <td><button class="detail-btn" type="button">Chi tiết</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <section class="address-info" aria-label="Thông tin địa chỉ">
+                <h4>THUQUAN.COM</h4>
+                <p>Không gian đọc sách & sáng tạo</p>
+                <p><i>Địa chỉ:</i> 123 CMT8, Q3, TP HCM.</p>
+                <p><i>Giờ hoạt động:</i> 8:00 AM - 22:00 PM, Thứ Hai đến Chủ Nhật</p>
+            </section>
+
+            <section aria-label="Liên hệ và hỗ trợ">
+                <h4>Liên hệ & hỗ trợ</h4>
+                <p>Hotline: 0909-150-909</p>
+                <p>E-mail: contact@thuquan.vn</p>
+                <p>Hướng dẫn đặt bàn</p>
+                <p>Chính sách thuê thiết bị</p>
+                <p>Quy định thu quán</p>
+            </section>
+
+            <section aria-label="Mạng xã hội & cộng đồng">
+                <h4>Mạng xã hội & cộng đồng</h4>
+                <a href="#" target="_blank" rel="noopener">Facebook</a>
+                <a href="#" target="_blank" rel="noopener">Instagram</a>
+                <a href="#" target="_blank" rel="noopener">Tiktok</a>
+            </section>
+
+            <section aria-label="Chính sách & điều khoản">
+                <h4>Chính sách & điều khoản</h4>
+                <p>Chính sách đặt chỗ</p>
+                <p>Chính sách hoàn tiền</p>
+                <p>Điều khoản sử dụng dịch vụ</p>
+                <p>Chính sách bảo mật</p>
+            </section>
+        </div>
+    </footer>

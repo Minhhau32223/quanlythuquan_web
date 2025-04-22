@@ -1,0 +1,37 @@
+# Build
+bin/
+obj/
+*.dll
+*.exe
+
+# Visual Studio
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+.vs/
+
+# NuGet
+packages/
+*.nupkg
+project.lock.json
+
+# Publish
+*.Publish.xml
+
+# Logs
+*.log
+
+# Web
+wwwroot/lib/
+node_modules/
+
+# ReSharper
+*.DotSettings.user
+
+# Rider
+.idea/
+
+# Thư mục tạm khác
+TestResults/
