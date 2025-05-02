@@ -1,56 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\CS\\ASP\\quanlythuquan_web\\",
+  "WorkspaceRootPath": "C:\\Users\\Admin\\source\\repos\\ProjectWeb1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{49F3E427-3439-453F-9BB8-E8B5FA486118}|Quanlythuquanweb\\Quanlythuquanweb.csproj|E:\\CS\\ASP\\quanlythuquan_web\\quanlythuquanweb\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{49F3E427-3439-453F-9BB8-E8B5FA486118}|Quanlythuquanweb\\Quanlythuquanweb.csproj|solutionrelative:quanlythuquanweb\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{49F3E427-3439-453F-9BB8-E8B5FA486118}|Quanlythuquanweb\\Quanlythuquanweb.csproj|e:\\cs\\asp\\quanlythuquan_web\\quanlythuquanweb\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{49F3E427-3439-453F-9BB8-E8B5FA486118}|Quanlythuquanweb\\Quanlythuquanweb.csproj|C:\\Users\\Admin\\source\\repos\\ProjectWeb1\\quanlythuquanweb\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{49F3E427-3439-453F-9BB8-E8B5FA486118}|Quanlythuquanweb\\Quanlythuquanweb.csproj|solutionrelative:quanlythuquanweb\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{49F3E427-3439-453F-9BB8-E8B5FA486118}|Quanlythuquanweb\\Quanlythuquanweb.csproj|e:\\cs\\asp\\quanlythuquan_web\\quanlythuquanweb\\views\\account\\signup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{49F3E427-3439-453F-9BB8-E8B5FA486118}|Quanlythuquanweb\\Quanlythuquanweb.csproj|solutionrelative:quanlythuquanweb\\views\\account\\signup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{49F3E427-3439-453F-9BB8-E8B5FA486118}|Quanlythuquanweb\\Quanlythuquanweb.csproj|C:\\Users\\Admin\\source\\repos\\ProjectWeb1\\quanlythuquanweb\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49F3E427-3439-453F-9BB8-E8B5FA486118}|Quanlythuquanweb\\Quanlythuquanweb.csproj|solutionrelative:quanlythuquanweb\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{49F3E427-3439-453F-9BB8-E8B5FA486118}|Quanlythuquanweb\\Quanlythuquanweb.csproj|e:\\cs\\asp\\quanlythuquan_web\\quanlythuquanweb\\helpers\\dbconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{49F3E427-3439-453F-9BB8-E8B5FA486118}|Quanlythuquanweb\\Quanlythuquanweb.csproj|solutionrelative:quanlythuquanweb\\helpers\\dbconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{49F3E427-3439-453F-9BB8-E8B5FA486118}|Quanlythuquanweb\\Quanlythuquanweb.csproj|E:\\CS\\ASP\\quanlythuquan_web\\quanlythuquanweb\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{49F3E427-3439-453F-9BB8-E8B5FA486118}|Quanlythuquanweb\\Quanlythuquanweb.csproj|solutionrelative:quanlythuquanweb\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{49F3E427-3439-453F-9BB8-E8B5FA486118}|Quanlythuquanweb\\Quanlythuquanweb.csproj|E:\\CS\\ASP\\quanlythuquan_web\\quanlythuquanweb\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{49F3E427-3439-453F-9BB8-E8B5FA486118}|Quanlythuquanweb\\Quanlythuquanweb.csproj|C:\\Users\\Admin\\source\\repos\\ProjectWeb1\\quanlythuquanweb\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{49F3E427-3439-453F-9BB8-E8B5FA486118}|Quanlythuquanweb\\Quanlythuquanweb.csproj|solutionrelative:quanlythuquanweb\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7A1A6983-44EE-2463-47D5-07E8D4F19CCD}|..\\..\\doan\\Doanc-sharp\\Doanc-sharp.csproj|e:\\cs\\doan\\doanc-sharp\\src\\dao\\danhmucdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{49F3E427-3439-453F-9BB8-E8B5FA486118}|Quanlythuquanweb\\Quanlythuquanweb.csproj|c:\\users\\admin\\source\\repos\\projectweb1\\quanlythuquanweb\\views\\home\\userprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{49F3E427-3439-453F-9BB8-E8B5FA486118}|Quanlythuquanweb\\Quanlythuquanweb.csproj|solutionrelative:quanlythuquanweb\\views\\home\\userprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7A1A6983-44EE-2463-47D5-07E8D4F19CCD}|..\\..\\doan\\Doanc-sharp\\Doanc-sharp.csproj|e:\\cs\\doan\\doanc-sharp\\src\\helpers\\dbconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{49F3E427-3439-453F-9BB8-E8B5FA486118}|Quanlythuquanweb\\Quanlythuquanweb.csproj|C:\\Users\\Admin\\source\\repos\\ProjectWeb1\\quanlythuquanweb\\models\\lshoatdong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49F3E427-3439-453F-9BB8-E8B5FA486118}|Quanlythuquanweb\\Quanlythuquanweb.csproj|solutionrelative:quanlythuquanweb\\models\\lshoatdong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{49F3E427-3439-453F-9BB8-E8B5FA486118}|Quanlythuquanweb\\Quanlythuquanweb.csproj|e:\\cs\\asp\\quanlythuquan_web\\quanlythuquanweb\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{49F3E427-3439-453F-9BB8-E8B5FA486118}|Quanlythuquanweb\\Quanlythuquanweb.csproj|solutionrelative:quanlythuquanweb\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{49F3E427-3439-453F-9BB8-E8B5FA486118}|Quanlythuquanweb\\Quanlythuquanweb.csproj|e:\\cs\\asp\\quanlythuquan_web\\quanlythuquanweb\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{49F3E427-3439-453F-9BB8-E8B5FA486118}|Quanlythuquanweb\\Quanlythuquanweb.csproj|solutionrelative:quanlythuquanweb\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{49F3E427-3439-453F-9BB8-E8B5FA486118}|Quanlythuquanweb\\Quanlythuquanweb.csproj|E:\\CS\\ASP\\quanlythuquan_web\\quanlythuquanweb\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{49F3E427-3439-453F-9BB8-E8B5FA486118}|Quanlythuquanweb\\Quanlythuquanweb.csproj|solutionrelative:quanlythuquanweb\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{49F3E427-3439-453F-9BB8-E8B5FA486118}|Quanlythuquanweb\\Quanlythuquanweb.csproj|E:\\CS\\ASP\\quanlythuquan_web\\quanlythuquanweb\\models\\thanhvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{49F3E427-3439-453F-9BB8-E8B5FA486118}|Quanlythuquanweb\\Quanlythuquanweb.csproj|solutionrelative:quanlythuquanweb\\models\\thanhvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{49F3E427-3439-453F-9BB8-E8B5FA486118}|Quanlythuquanweb\\Quanlythuquanweb.csproj|E:\\CS\\ASP\\quanlythuquan_web\\quanlythuquanweb\\models\\nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{49F3E427-3439-453F-9BB8-E8B5FA486118}|Quanlythuquanweb\\Quanlythuquanweb.csproj|solutionrelative:quanlythuquanweb\\models\\nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{49F3E427-3439-453F-9BB8-E8B5FA486118}|Quanlythuquanweb\\Quanlythuquanweb.csproj|C:\\Users\\Admin\\source\\repos\\ProjectWeb1\\quanlythuquanweb\\views\\account\\signup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{49F3E427-3439-453F-9BB8-E8B5FA486118}|Quanlythuquanweb\\Quanlythuquanweb.csproj|solutionrelative:quanlythuquanweb\\views\\account\\signup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -80,171 +54,79 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DbConnection.cs",
-              "DocumentMoniker": "E:\\CS\\ASP\\quanlythuquan_web\\Quanlythuquanweb\\Helpers\\DbConnection.cs",
-              "RelativeDocumentMoniker": "Quanlythuquanweb\\Helpers\\DbConnection.cs",
-              "ToolTip": "E:\\CS\\ASP\\quanlythuquan_web\\Quanlythuquanweb\\Helpers\\DbConnection.cs",
-              "RelativeToolTip": "Quanlythuquanweb\\Helpers\\DbConnection.cs",
-              "ViewState": "AgIAADYAAAAAAAAAAADwv0EAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T09:31:53.218Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SignUp.cshtml",
-              "DocumentMoniker": "E:\\CS\\ASP\\quanlythuquan_web\\Quanlythuquanweb\\Views\\Account\\SignUp.cshtml",
-              "RelativeDocumentMoniker": "Quanlythuquanweb\\Views\\Account\\SignUp.cshtml",
-              "ToolTip": "E:\\CS\\ASP\\quanlythuquan_web\\Quanlythuquanweb\\Views\\Account\\SignUp.cshtml",
-              "RelativeToolTip": "Quanlythuquanweb\\Views\\Account\\SignUp.cshtml",
-              "ViewState": "AgIAADsAAAAAAAAAAAAqwEwAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-01T08:48:40.893Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "E:\\CS\\ASP\\quanlythuquan_web\\Quanlythuquanweb\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "Quanlythuquanweb\\Controllers\\AccountController.cs",
-              "ToolTip": "E:\\CS\\ASP\\quanlythuquan_web\\Quanlythuquanweb\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "Quanlythuquanweb\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAAACsAAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T17:31:26.706Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "E:\\CS\\ASP\\quanlythuquan_web\\Quanlythuquanweb\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Quanlythuquanweb\\Controllers\\HomeController.cs",
-              "ToolTip": "E:\\CS\\ASP\\quanlythuquan_web\\Quanlythuquanweb\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Quanlythuquanweb\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T15:17:23.578Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "RouteConfig.cs",
-              "DocumentMoniker": "E:\\CS\\ASP\\quanlythuquan_web\\Quanlythuquanweb\\App_Start\\RouteConfig.cs",
-              "RelativeDocumentMoniker": "Quanlythuquanweb\\App_Start\\RouteConfig.cs",
-              "ToolTip": "E:\\CS\\ASP\\quanlythuquan_web\\Quanlythuquanweb\\App_Start\\RouteConfig.cs",
-              "RelativeToolTip": "Quanlythuquanweb\\App_Start\\RouteConfig.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABHAAAAAAAAAA==",
+              "Title": "LSHoatDong.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ProjectWeb1\\Quanlythuquanweb\\Models\\LSHoatDong.cs",
+              "RelativeDocumentMoniker": "Quanlythuquanweb\\Models\\LSHoatDong.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ProjectWeb1\\Quanlythuquanweb\\Models\\LSHoatDong.cs",
+              "RelativeToolTip": "Quanlythuquanweb\\Models\\LSHoatDong.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T18:29:05.782Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "DanhMucDAO.cs",
-              "DocumentMoniker": "E:\\CS\\doan\\Doanc-sharp\\src\\DAO\\DanhMucDAO.cs",
-              "RelativeDocumentMoniker": "..\\..\\doan\\Doanc-sharp\\src\\DAO\\DanhMucDAO.cs",
-              "ToolTip": "E:\\CS\\doan\\Doanc-sharp\\src\\DAO\\DanhMucDAO.cs",
-              "RelativeToolTip": "..\\..\\doan\\Doanc-sharp\\src\\DAO\\DanhMucDAO.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T09:51:59.331Z",
+              "WhenOpened": "2025-05-01T15:00:01.809Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ProjectWeb1\\Quanlythuquanweb\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Quanlythuquanweb\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ProjectWeb1\\Quanlythuquanweb\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Quanlythuquanweb\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAowCsAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T14:57:44.101Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Login.cshtml",
-              "DocumentMoniker": "E:\\CS\\ASP\\quanlythuquan_web\\Quanlythuquanweb\\Views\\Account\\Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ProjectWeb1\\Quanlythuquanweb\\Views\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "Quanlythuquanweb\\Views\\Account\\Login.cshtml",
-              "ToolTip": "E:\\CS\\ASP\\quanlythuquan_web\\Quanlythuquanweb\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ProjectWeb1\\Quanlythuquanweb\\Views\\Account\\Login.cshtml",
               "RelativeToolTip": "Quanlythuquanweb\\Views\\Account\\Login.cshtml",
-              "ViewState": "AgIAACAAAAAAAAAAAAAqwC4AAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAAD0AAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-27T17:36:00.842Z",
+              "WhenOpened": "2025-05-01T14:50:36.555Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "DbConnection.cs",
-              "DocumentMoniker": "E:\\CS\\doan\\Doanc-sharp\\src\\Helpers\\DbConnection.cs",
-              "RelativeDocumentMoniker": "..\\..\\doan\\Doanc-sharp\\src\\Helpers\\DbConnection.cs",
-              "ToolTip": "E:\\CS\\doan\\Doanc-sharp\\src\\Helpers\\DbConnection.cs",
-              "RelativeToolTip": "..\\..\\doan\\Doanc-sharp\\src\\Helpers\\DbConnection.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T09:03:34.925Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Web.config",
-              "DocumentMoniker": "E:\\CS\\ASP\\quanlythuquan_web\\Quanlythuquanweb\\Web.config",
-              "RelativeDocumentMoniker": "Quanlythuquanweb\\Web.config",
-              "ToolTip": "E:\\CS\\ASP\\quanlythuquan_web\\Quanlythuquanweb\\Web.config",
-              "RelativeToolTip": "Quanlythuquanweb\\Web.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABRAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-05-01T08:33:47.57Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Web.config",
-              "DocumentMoniker": "E:\\CS\\ASP\\quanlythuquan_web\\Quanlythuquanweb\\Views\\Web.config",
-              "RelativeDocumentMoniker": "Quanlythuquanweb\\Views\\Web.config",
-              "ToolTip": "E:\\CS\\ASP\\quanlythuquan_web\\Quanlythuquanweb\\Views\\Web.config",
-              "RelativeToolTip": "Quanlythuquanweb\\Views\\Web.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-05-01T08:40:01.541Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "E:\\CS\\ASP\\quanlythuquan_web\\Quanlythuquanweb\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Quanlythuquanweb\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "E:\\CS\\ASP\\quanlythuquan_web\\Quanlythuquanweb\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Quanlythuquanweb\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "SignUp.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ProjectWeb1\\Quanlythuquanweb\\Views\\Account\\SignUp.cshtml",
+              "RelativeDocumentMoniker": "Quanlythuquanweb\\Views\\Account\\SignUp.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ProjectWeb1\\Quanlythuquanweb\\Views\\Account\\SignUp.cshtml",
+              "RelativeToolTip": "Quanlythuquanweb\\Views\\Account\\SignUp.cshtml",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-27T17:41:26.609Z",
+              "WhenOpened": "2025-05-01T14:52:28.254Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ProjectWeb1\\Quanlythuquanweb\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Quanlythuquanweb\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ProjectWeb1\\Quanlythuquanweb\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Quanlythuquanweb\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAAADgAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T14:49:42.549Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "NhanVien.cs",
-              "DocumentMoniker": "E:\\CS\\ASP\\quanlythuquan_web\\Quanlythuquanweb\\Models\\NhanVien.cs",
-              "RelativeDocumentMoniker": "Quanlythuquanweb\\Models\\NhanVien.cs",
-              "ToolTip": "E:\\CS\\ASP\\quanlythuquan_web\\Quanlythuquanweb\\Models\\NhanVien.cs",
-              "RelativeToolTip": "Quanlythuquanweb\\Models\\NhanVien.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T17:09:50.191Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ThanhVien.cs",
-              "DocumentMoniker": "E:\\CS\\ASP\\quanlythuquan_web\\Quanlythuquanweb\\Models\\ThanhVien.cs",
-              "RelativeDocumentMoniker": "Quanlythuquanweb\\Models\\ThanhVien.cs",
-              "ToolTip": "E:\\CS\\ASP\\quanlythuquan_web\\Quanlythuquanweb\\Models\\ThanhVien.cs",
-              "RelativeToolTip": "Quanlythuquanweb\\Models\\ThanhVien.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T17:07:21.947Z",
+              "DocumentIndex": 3,
+              "Title": "UserProfile.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ProjectWeb1\\Quanlythuquanweb\\Views\\Home\\UserProfile.cshtml",
+              "RelativeDocumentMoniker": "Quanlythuquanweb\\Views\\Home\\UserProfile.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ProjectWeb1\\Quanlythuquanweb\\Views\\Home\\UserProfile.cshtml",
+              "RelativeToolTip": "Quanlythuquanweb\\Views\\Home\\UserProfile.cshtml",
+              "ViewState": "AgIAAJIBAAAAAAAAAAAYwKoBAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-01T14:45:49.322Z",
               "EditorCaption": ""
             }
           ]
