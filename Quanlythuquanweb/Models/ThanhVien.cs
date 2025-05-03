@@ -7,14 +7,15 @@ namespace Quanlythuquanweb.Models
 {
     public class ThanhVien
     {
-        int Mathanhvien {  get; set; }
-        string HoTen {  get; set; }
-        string Taikhoan { get; set; }
-        string Matkhau { get; set; }
-        string DiaChi { get; set; }
-        int Sdt {  get; set; }
-        DateTime Ngaydangky { get; set; }
-        string Trangthai {  get; set; }
-        string Email { get; set; }
+        public int Mathanhvien {  get; set; }
+        public string HoTen {  get; set; }
+        public string Taikhoan { get; set; }
+        public string Matkhau { get; set; }
+        public string DiaChi { get; set; }
+        public int Sdt {  get; set; }
+        public DateTime Ngaydangky { get; set; }
+        public string Trangthai {  get; set; }
+        public string Email { get; set; }
     }
+    
 }

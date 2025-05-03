@@ -71,9 +71,9 @@
 
     /* Header Banner */
     .header-banner {
-        background: url('https://i.imgur.com/n0vYqTm.jpg') no-repeat center center/cover;
-        position: relative;
-        color: white;
+/*        background: url('https://i.imgur.com/n0vYqTm.jpg') no-repeat center center/cover;
+        position: relative;*/
+        color: burlywood;
         padding: 40px 60px;
         min-height: 300px;
         display: flex;
@@ -374,15 +374,25 @@
 
     <!-- Header Banner -->
     <section class="header-banner" aria-label="Thông tin cá nhân">
-        <div class="profile-img" aria-hidden="true">
-            <img src="https://i.imgur.com/Qq1fjQm.png" alt="Avatar cá nhân" />
-        </div>
+        @* <div class="profile-img" aria-hidden="true">
+                <img src="~/Views/Home/imgs/defaultAvt.jpg" alt="Avatar cá nhân" />
+            </div> *@
         <div class="profile-info">
-            <div class="section-label">Thông tin cá nhân</div>
-            <h1>Your Profile</h1>
-            <p>Email: volehoangtan@gmail.com</p>
-            <p>Phone Number: 0988-980-000</p>
-            <p>Address: Ho Chi Minh City, VietNam</p>
+            <div class="section-label"><h1>Thông tin cá nhân</h1></div>
+            @if (ViewBag.profile != null)
+            {
+                ThanhVien data = (ThanhVien)ViewBag.profile;
+                <p>Họ tên: @data.HoTen</p>
+                <p>Email: @data.Email</p>
+                <p>Số điện thoại: +84 @data.Sdt</p>
+                <p>Địa chỉ: @data.DiaChi</p>
+                <p>Ngày đăng ký: @data.Ngaydangky</p>
+            }
+            else
+            {
+                <h3>Lỗi khi tải thông tin cá nhân</h3>
+            }
+            <button id="btn-edit-infor" class="btn-closemodal" >Chỉnh sửa thông tin</button>
         </div>
         <div class="border-line" aria-hidden="true"></div>
     </section>
@@ -423,11 +433,11 @@
                                 <td>@item.thoigian.ToString("dd/MM/yyyy HH:mm")</td>
                                 <td>
                                     <button class="btn-edit"
-                                        data-mathanhvien="@item.mathanhvien"
-                                        data-mahoatdong="@item.mahoatdong"
-                                        data-loai="@item.loai"
-                                        data-chitiet="@item.chitiet"
-                                        data-thoigian="@item.thoigian.ToString("HH:mm:ss - dd-MM-yyyy")">
+                                            data-mathanhvien="@item.mathanhvien"
+                                            data-mahoatdong="@item.mahoatdong"
+                                            data-loai="@item.loai"
+                                            data-chitiet="@item.chitiet"
+                                            data-thoigian="@item.thoigian.ToString("HH:mm:ss - dd-MM-yyyy")">
                                         Chi tiết
                                     </button>
                                 </td>
@@ -447,12 +457,19 @@
 
         <!--Thông tin cá nhân -->
         <section id="personal-info" class="content-area" style="display: block;">
-            <h2>Thông tin cá nhân</h2>
-            <p>Họ và tên: Võ Lê Hoàng Tân</p>
-            <p>Email: volehoangtan@gmail.com</p>
-            <p>Phone Number: 0988-980-000</p>
-            <p>Address: Ho Chi Minh City, VietNam</p>
-            <button class="btn-edit">Chỉnh sửa</button>
+            @if (ViewBag.profile != null)
+            {
+                ThanhVien data = (ThanhVien)ViewBag.profile;
+                <p>Họ tên: @data.HoTen</p>
+                <p>Email: @data.Email</p>
+                <p>Số điện thoại: +84 @data.Sdt</p>
+                <p>Địa chỉ: @data.DiaChi</p>
+                <p>Ngày đăng ký: @data.Ngaydangky</p>
+            }
+            else
+            {
+                <h3>Lỗi khi tải thông tin cá nhân</h3>
+            }
         </section>
     </main>
     <!-- Modal Overlay -->
@@ -465,6 +482,27 @@
             <p><strong>Chi tiết hoạt động:</strong> <span id="modal-chitiet"></span></p>
             <p><strong>Thời gian:</strong> <span id="modal-thoigian"></span></p>
             <button id="close-modal" class="btn-closemodal" type="button">Đóng</button>
+        </div>
+    </div>
+
+    <div id="edit-infor-form" class="modal-overlay" style="display: none;">
+        <div class="modal-content">
+            <h3>Chỉnh sửa thông tin</h3>
+            @if (ViewBag.profile != null)
+            {
+                ThanhVien data = (ThanhVien)ViewBag.profile;
+                <p><strong>Họ tên:</strong> <input id="hoten-input" value="@data.HoTen" /> </p>
+                <p><strong>Email:</strong> <input id="email-input" value="@data.Email"/> </p>
+                <p><strong>Số điện thoại:</strong> <input id="sdt-input" value="@data.Sdt" /> </p>
+                <p><strong>Địa chỉ:</strong> <input id="diachi-input" value="@data.DiaChi"/> </p>
+                <button id="confirm-edit-infor" class="btn-closemodal" type="button">Xác nhận</button>
+                <button id="cancel-edit-infor" class="btn-closemodal" type="button">Đóng</button>
+            }
+            else
+            {
+                <h3>Lỗi khi tải thông tin cá nhân</h3>
+            }
+
         </div>
     </div>
 
@@ -517,12 +555,34 @@
         const modalChitiet = document.getElementById('modal-chitiet');
         const modalThoigian = document.getElementById('modal-thoigian');
 
+        const editInfor = document.getElementById('edit-infor-form');
+
         btnInfo.addEventListener('click', () => {
             sectionInfo.style.display = 'block';
             sectionActivity.style.display = 'none';
 
             btnInfo.classList.add('active');
             btnActivity.classList.remove('active');
+        });
+
+        document.getElementById("btn-edit-infor").addEventListener('click', () => {
+            editInfor.style.display = 'flex';
+        });
+
+        document.getElementById('cancel-edit-infor').addEventListener('click', () => {
+            editInfor.style.display = 'none';
+        });
+
+        document.getElementById('confirm-edit-infor').addEventListener('click', () => {
+            // TODO save
+            // Lấy giá trị từ các input
+            let hoten = document.getElementById('hoten-input').value;
+            let email = document.getElementById('email-input').value;
+            let sdt = document.getElementById('sdt-input').value;
+            let diachi = document.getElementById('diachi-input').value;
+            // Gửi dữ liệu đến Controller để cập nhật thông tin
+            alert('Cập nhật thành công')
+            editInfor.style.display = 'none';
         });
 
         btnActivity.addEventListener('click', () => {
@@ -573,7 +633,7 @@
                 sectionInfo.style.display = 'none';
             }
         });
-    
+
 
          //$(document).ready(function () {
         @*var hasHistory = '@(ViewBag.LichSuHoatDong != null && ((List<LSHoatDong>)ViewBag.LichSuHoatDong).Count > 0)';

@@ -58,15 +58,65 @@ namespace Quanlythuquanweb.Controllers
                         lshd.Add(log);
                     }
                 }
+
+
+
+                string queryProfile = @"SELECT * FROM thanhvien WHERE Mathanhvien = @mathanhvien";
+                MySqlCommand cmdProfile = new MySqlCommand(queryProfile, conn);
+                cmdProfile.Parameters.AddWithValue("@mathanhvien", mathanhvien);
+                using (MySqlDataReader reader = cmdProfile.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        ThanhVien tv = new ThanhVien
+                        {
+                            Mathanhvien = Convert.ToInt32(reader["Mathanhvien"]),
+                            HoTen = Convert.ToString(reader["Hoten"]),
+                            DiaChi = Convert.ToString(reader["Diachi"]),
+                            Sdt = Convert.ToInt32(reader["Sdt"]),
+                            Email = Convert.ToString(reader["Email"]),
+                            Ngaydangky = Convert.ToDateTime(reader["Ngaydangky"])
+                        };
+                        ViewBag.profile = tv;
+                    }
+                    else ViewBag.profile = null;
+                }
+
                 conn.Close();
                 ViewBag.lshd = lshd;
                 return View();
             }
             else
             {
-                return RedirectToAction("Login", "Home");
+                //return RedirectToAction("Login", "Home");
+                return View();
             }
             
+        }
+
+        public ActionResult CapNhatThongTin(ThanhVien model)
+        {
+            if (Session["Mathanhvien"] != null)
+            {
+                int mathanhvien = Convert.ToInt32(Session["Mathanhvien"]);
+                MySqlConnection conn = db.GetConnection();
+                conn.Open();
+                string queryProfile = @"UPDATE thanhvien SET Hoten=@hoten, Email=@email, Sdt=@sdt, Diachi=@diachi WHERE Mathanhvien = @mathanhvien";
+                MySqlCommand cmdProfile = new MySqlCommand(queryProfile, conn);
+                cmdProfile.Parameters.AddWithValue("@hoten", model.HoTen);
+                cmdProfile.Parameters.AddWithValue("@email", model.Email);
+                cmdProfile.Parameters.AddWithValue("@sdt", model.Sdt);
+                cmdProfile.Parameters.AddWithValue("@diachi", model.DiaChi);
+                cmdProfile.Parameters.AddWithValue("@mathanhvien", mathanhvien);
+                Boolean success = cmdProfile.ExecuteNonQuery() > 0;
+                conn.Close();
+                ViewBag.success = success;
+                return RedirectToAction("UserProfile");
+            }
+            else
+            {
+                return RedirectToAction("Login", "Home");
+            }
         }
     }
 }
