@@ -9,12 +9,14 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>Tranchu</title>
+    <title>Trangchu</title>
     <style>
         body {
             margin: 0;
             padding: 0;
             height: 100%;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5dc;
         }
         .wrapper {
             min-height: 100vh; /* Chiều cao tối thiểu = 100% màn hình */
@@ -169,6 +171,8 @@
             margin: 30px auto;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0,0,0,0.2);
+          
+            z-index:50;
         }
 
         .carousel {
@@ -219,17 +223,20 @@
                 }
            main{
                max-width:80%;
-               border:5px solid black ;
+               border-radius:15px 10px;
                align-items:center;
-               margin-left:10%;
+               margin:4% 10%;
                flex:1;
+               background:#ffffff;
+               padding:20px;
+               box-shadow: rgba(0,0,0,0.4) 10px 10px initial;
+               
                
            }
     </style>
 </head>
 <body>
-    <div class="wrapper">
-        <header class="top-bar">
+      <header class="top-bar">
             <div class="logo">THUQUAN.COM</div>
             <nav>
                 <a href="#">Trang chủ</a>
@@ -245,10 +252,10 @@
 
         <div class="carousel-container" style="text-align: center; margin: 30px auto; ">
             <div class="carousel">
-                <img class="carousel-image" src="images/banner1.png" alt="Banner 1">
-                <img class="carousel-image" src="images/banner1.png" alt="Banner 2">
-                <img class="carousel-image" src="images/banner1.png" alt="Banner 3">
-                <img class="carousel-image" src="images/banner1.png" alt="Banner 4">
+                <img class="carousel-image" src="~/Resoucres/Images/banner1.png" alt="Banner 1">
+                <img class="carousel-image" src="~/Resoucres/Images/banner2.png" alt="Banner 2">
+                <img class="carousel-image" src="~/Resoucres/Images/banner3.png" alt="Banner 3">
+                <img class="carousel-image" src="~/Resoucres/Images/banner4.png" alt="Banner 4">
             </div>
             <div class="carousel-buttons">
                 <button onclick="prevSlide()">❮</button>
@@ -265,7 +272,8 @@
                 <p>Không có thiết bị nào trong hệ thống.</p>
             }
             else
-            { <div style="text-align:center; margin: 20px 0;">
+            { <div style="text-align:start; margin: 20px 0 ; display:flex ">
+                     <p style="margin :5px 10px; font-size:24px ;text-decoration:blink; ">Tìm kiếm thiết bị</p>
                     <input type="text" id="searchInput" placeholder="Tìm kiếm theo tên thiết bị..." style="width: 300px; padding: 10px; border-radius: 6px; border: 1px solid #ccc;">
                 </div>
                 <div class="table-container">
@@ -313,7 +321,7 @@
                 </div>
             }
         </main>
-    </div>
+  
     <footer>
 
 
