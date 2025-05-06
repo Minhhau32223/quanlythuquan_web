@@ -180,6 +180,7 @@
     <Compile Include="Helpers\DbConnection.cs" />
     <Compile Include="Models\ChiTietDatCho.cs" />
     <Compile Include="Models\DatCho.cs" />
+    <Compile Include="Models\LichSuDatCho.cs" />
     <Compile Include="Models\LSHoatDong.cs" />
     <Compile Include="Models\NhanVien.cs" />
     <Compile Include="Models\ThanhVien.cs" />

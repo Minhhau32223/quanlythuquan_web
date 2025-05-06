@@ -82,8 +82,50 @@ namespace Quanlythuquanweb.Controllers
                     else ViewBag.profile = null;
                 }
 
+
+                string queryLSDC = @"
+                    SELECT 
+                        dc.Madatcho,
+                        dc.Thoigiandat,
+                        ct.Mathietbi,
+                        tb.Tenthietbi,
+                        tb.Giathue,
+                        ct.soluong,
+                        dc.Trangthai
+                    FROM datcho AS dc
+                    JOIN chitietdatcho AS ct ON dc.Madatcho = ct.Madatcho
+                    JOIN thietbi AS tb ON ct.Mathietbi = tb.Mathietbi
+                    WHERE dc.Mathanhvien = @mathanhvien
+                      AND dc.is_delete = 0
+                      AND tb.is_delete = 0
+                    ORDER BY dc.Thoigiandat DESC;
+                    ";
+
+                MySqlCommand cmdLSDC = new MySqlCommand(queryLSDC, conn);
+                cmdLSDC.Parameters.AddWithValue("@mathanhvien", mathanhvien);
+
+                List<LichSuDatCho> lsdc = new List<LichSuDatCho>();
+                using (MySqlDataReader reader = cmdLSDC.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        LichSuDatCho item = new LichSuDatCho
+                        {
+                            madatcho = Convert.ToInt32(reader["Madatcho"]),
+                            thoigianbatdau = Convert.ToDateTime(reader["Thoigiandat"]),
+                            mathietbi = Convert.ToInt32(reader["Mathietbi"]),
+                            tenthietbi = reader["Tenthietbi"].ToString(),
+                            giathue = Convert.ToInt32(reader["Giathue"]),
+                            soluong = Convert.ToInt32(reader["soluong"]),
+                            trangthai = reader["Trangthai"].ToString()
+                        };
+                        lsdc.Add(item);
+                    }
+                }
+
                 conn.Close();
                 ViewBag.lshd = lshd;
+                ViewBag.Device = lsdc;
                 return View();
             }
             else

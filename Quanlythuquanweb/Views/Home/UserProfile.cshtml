@@ -402,8 +402,7 @@
         <nav class="sidebar" aria-label="Dẫn hướng trang cá nhân">
             <button id="btn-info" class="active" type="button" aria-current="page">Thông tin cá nhân</button>
             <button id="btn-activity" type="button">Lịch sử hoạt động</button>
-            <button type="button">Chỗ đã đặt</button>
-            <button type="button">Thiết bị đã đặt</button>
+            <button id="btn-device" type="button">Thiết bị đã đặt</button>
         </nav>
 
         <!-- Content Area -->
@@ -448,6 +447,57 @@
                     {
                         <tr>
                             <td colspan="5">Không có hoạt động nào.</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </section>
+        <section id="device-history" class="content-area" style="display:none">
+            <h2>Thiết bị đã đặt</h2>
+            <table>
+                <thead>
+                    <tr>
+                        @*public int madatcho { get; set; }
+        public int mathanhvien { get; set; }
+        public DateTime thoigianbatdau { get; set; }
+        public DateTime thoigianketthuc { get; set; }
+        public int mathietbi { get; set; }
+        public string tenthietbi { get; set; }
+        public int giathue { get; set; }
+        public int soluong { get; set; }
+        public string trangthai { get; set; }*@
+                        <th>Mã đặt chỗ</th>
+                        <th>Mã thiết bị</th>
+                        <th>Tên thiết bị</th>
+                        <th>Thời gian đặt</th>
+                        <th>Số lượng</th>
+                        <th>Giá</th>
+                        <th>Tổng tiền</th>
+                        <th>Trạng thái</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (ViewBag.Device != null && ((List<Quanlythuquanweb.Models.LichSuDatCho>)ViewBag.Device).Count > 0)
+                    {
+                        foreach (var item in (List<Quanlythuquanweb.Models.LichSuDatCho>)ViewBag.Device)
+                        {
+                            int tong = @item.giathue * @item.soluong;
+                            <tr>
+                                <td>@item.madatcho</td>
+                                <td>@item.mathietbi</td>
+                                <td>@item.tenthietbi</td>
+                                <td>@item.thoigianbatdau.ToString("dd/MM/yyyy HH:mm")</td>
+                                <td>@item.soluong</td>
+                                <td>@item.giathue.ToString("N0") VNĐ</td>
+                                <td>@tong.ToString("N0") VNĐ</td>
+                                <td>@item.trangthai</td>
+                            </tr>
+                        }
+                    }
+                    else
+                    {
+                        <tr>
+                            <td colspan="7">Không có thiết bị nào đã đặt.</td>
                         </tr>
                     }
                 </tbody>
@@ -543,6 +593,7 @@
     <script>
         const btnInfo = document.getElementById('btn-info');
         const btnActivity = document.getElementById('btn-activity');
+
 
         const sectionInfo = document.getElementById('personal-info');
         const sectionActivity = document.getElementById('activity-history');
@@ -640,5 +691,38 @@
             $("#activity-history").show();
         }
         });*@
+
+
+
+
+        document.getElementById("btn-device").addEventListener("click", function () {
+            document.getElementById("personal-info").style.display = "none";
+            document.getElementById("activity-history").style.display = "none";
+            document.getElementById("device-history").style.display = "block";
+
+            document.getElementById("btn-info").classList.remove("active");
+            document.getElementById("btn-activity").classList.remove("active");
+            this.classList.add("active");
+        });
+
+        document.getElementById("btn-info").addEventListener("click", function () {
+            document.getElementById("personal-info").style.display = "block";
+            document.getElementById("activity-history").style.display = "none";
+            document.getElementById("device-history").style.display = "none";
+
+            this.classList.add("active");
+            document.getElementById("btn-activity").classList.remove("active");
+            document.getElementById("btn-device").classList.remove("active");
+        });
+
+        document.getElementById("btn-activity").addEventListener("click", function () {
+            document.getElementById("personal-info").style.display = "none";
+            document.getElementById("activity-history").style.display = "block";
+            document.getElementById("device-history").style.display = "none";
+
+            this.classList.add("active");
+            document.getElementById("btn-info").classList.remove("active");
+            document.getElementById("btn-device").classList.remove("active");
+        });
     </script>
 </body>
