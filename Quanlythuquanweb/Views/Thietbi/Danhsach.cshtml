@@ -22,6 +22,8 @@
             min-height: 100vh; /* Chiều cao tối thiểu = 100% màn hình */
             display: flex;
             flex-direction: column;
+            background-color: rgb(206, 152, 100, 0.85);
+            
         }
         /* Header */
         header.top-bar {
@@ -123,8 +125,9 @@
         .table-container {
             max-height: 520px; /* khoảng ~7 dòng với padding lớn */
             overflow-y: auto;
-            border: 1px solid #ccc;
+/*            border: 1px solid #ccc;*/
             margin-top: 10px;
+            padding: 12px 14px;
         }
 
         table {
@@ -223,15 +226,23 @@
                 }
            main{
                max-width:80%;
+
                border-radius:15px 10px;
+
+               border:2px solid black ;
+
                align-items:center;
                margin:4% 10%;
                flex:1;
-               background:#ffffff;
+
+           
                padding:20px;
                box-shadow: rgba(0,0,0,0.4) 10px 10px initial;
                
                
+
+               background-color: white;
+
            }
     </style>
 </head>
@@ -239,10 +250,10 @@
       <header class="top-bar">
             <div class="logo">THUQUAN.COM</div>
             <nav>
-                <a href="#">Trang chủ</a>
+                <a href="@Url.Action("Danhsach", "Thietbi")">Trang chủ</a>
                 <a href="#">Thủ tục</a>
                 <a href="#">Liên hệ</a>
-                <a href="#">Cá nhân</a>
+                <a href="@Url.Action("UserProfile", "Home")">Cá nhân</a>
             </nav>
             <div class="icons">
                 <svg class="bell" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M12 24c1.104 0 1.99-.896 1.99-2h-3.98c0 1.104.886 2 1.99 2zm6.364-6v-5c0-3.079-1.639-5.641-4.364-6.32v-.68c0-.826-.675-1.5-1.5-1.5s-1.5.674-1.5 1.5v.68c-2.725.679-4.364 3.241-4.364 6.32v5l-1.636 1.636v.364h15v-.364l-1.636-1.636z" /></svg>
@@ -265,7 +276,8 @@
 
         <!-- MAIN -->
         <main>
-            <h2>Danh sách thiết bị</h2>
+            <h2 style="font-size: 32px; margin-left: 24px; color: #2d1700">Danh sách thiết bị</h2>
+            <hr />
 
             @if (Model.Count == 0)
             {

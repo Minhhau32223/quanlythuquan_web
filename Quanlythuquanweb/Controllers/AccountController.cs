@@ -44,7 +44,7 @@ namespace Quanlythuquanweb.Controllers
                     int mathanhvien = countTV;
                     Session["Mathanhvien"] = mathanhvien;
                     ViewBag.Message = "Đăng nhập thành công!";
-                    return RedirectToAction("UserProfile", "Home");
+                    return RedirectToAction("Danhsach", "Thietbi");
                 }
                 else
                 {

@@ -178,10 +178,13 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Helpers\DbConnection.cs" />
+    <Compile Include="Models\ChiTietDatCho.cs" />
+    <Compile Include="Models\DatCho.cs" />
     <Compile Include="Models\LSHoatDong.cs" />
     <Compile Include="Models\NhanVien.cs" />
     <Compile Include="Models\ThanhVien.cs" />
     <Compile Include="Models\Thietbi.cs" />
+    <Compile Include="Models\ViewModels\DatchoViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -242,6 +245,8 @@
     <Content Include="Views\EditInfor\Index.cshtml" />
     <Content Include="Views\Home\CapNhatThongTin.cshtml" />
     <Content Include="Views\Thietbi\Danhsach.cshtml" />
+    <Content Include="Views\Thietbi\DatCho.cshtml" />
+    <Content Include="Views\Thietbi\ThanhCong.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

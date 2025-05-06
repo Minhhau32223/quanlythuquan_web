@@ -1,0 +1,190 @@
+﻿@using Quanlythuquanweb.Models
+@model Quanlythuquanweb.Models.ViewModels.DatChoViewModel
+
+@{
+    Layout = null;
+    ViewBag.Title = "DatCho";
+}
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Phiếu Đặt Chỗ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+
+        .container {
+            border: 1px solid #000;
+            padding: 20px;
+            width: 700px;
+            margin: auto;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            color: rgb(52 10 0);
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .line {
+            border-top: 1px solid rgb(52 10 0);
+            margin: 20px 0;
+        }
+
+        textarea {
+            width: 100%;
+            height: 80px;
+        }
+
+        .buttons {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+            .buttons button {
+                padding: 10px 20px;
+                margin: 0 10px;
+                font-size: 16px;
+            }
+
+        .datcho-form {
+            width: 100%;
+            max-width: 600px;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+            margin: auto;
+            font-family: Arial, sans-serif;
+        }
+
+            .datcho-form h2 {
+                text-align: center;
+                margin-bottom: 30px;
+                color: rgb(52 10 0);
+            }
+
+            .datcho-form label {
+                font-weight: bold;
+                display: block;
+                margin-bottom: 5px;
+            }
+
+            .datcho-form input[type="number"],
+            .datcho-form input[type="date"],
+            .datcho-form textarea {
+                width: 100%;
+                padding: 8px 10px;
+                margin-bottom: 20px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+
+            .datcho-form textarea {
+                resize: vertical;
+            }
+
+            .datcho-form .btn-group {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 20px;
+            }
+
+            .datcho-form .btn {
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                text-decoration: none;
+                font-weight: bold;
+                cursor: pointer;
+            }
+
+        .btn-primary {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .btn-secondary {
+            background-color: #6c757d;
+            color: white;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>PHIẾU ĐẶT CHỖ</h2>
+
+        <div class="section">
+            <div class="section-title">Thông tin người đặt:</div>
+            <p>Họ tên: @Model.ThanhVien.HoTen</p>
+            <p>Số điện thoại: +84 @Model.ThanhVien.Sdt</p>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="section">
+            <div class="section-title">Thông tin thiết bị:</div>
+            @if (Model != null)
+            {
+                <p><strong>Tên thiết bị:</strong> @Model.Thietbi.Tenthietbi</p>
+                <p><strong>Mã thiết bị:</strong> @Model.Thietbi.Mathietbi</p>
+                <p><strong>Giá thuê (VND/ngày):</strong> @(Model.Thietbi.Giathue.ToString("N0"))</p>
+            }
+            else
+            {
+                <p>Model is null</p>
+            }
+
+        </div>
+
+        <div class="line"></div>
+
+        <div class="section">
+            <div class="section-title"><h2>Chi tiết đặt chỗ:</h2></div>
+            <form method="post" action="@Url.Action("XacNhanDatCho", "Thietbi")" class="datcho-form">
+                <input type="hidden" name="mathietbi" value="@Model.Thietbi.Mathietbi" />
+
+                <label>Số lượng:</label>
+                <input type="number" name="soluong" min="1" value="1" required /><br />
+
+                <label>Ngày mượn:</label>
+                <input type="date" name="ngaymuon" required /><br />
+
+
+                <label>Thanh toán: :</label>
+                <input type="number" name="tongtien" value="" disabled /><br />
+                <div class="line"></div>
+
+                <div class="btn-group">
+                    <a href="@Url.Action("Danhsach", "Thietbi")" class="btn btn-secondary">Quay lại chỉnh sửa</a>
+                    <button type="submit" class="btn btn-primary">Xác nhận đặt chỗ</button>
+                </div>
+
+            </form>
+        </div>
+
+       
+    </div>
+</body>
+</html>
