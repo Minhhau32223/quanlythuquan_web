@@ -3,7 +3,10 @@ bin/
 obj/
 *.dll
 *.exe
-
+/bin/
+/obj/
+/*.dll
+/*.pdb
 # Visual Studio
 .vscode/
 *.user
