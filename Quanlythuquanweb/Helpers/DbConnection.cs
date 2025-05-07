@@ -82,5 +82,30 @@ namespace Doanc_sharp.src.Helpers
             }
             return result;
         }
+        private Random random = new Random();
+
+        // Sinh số ngẫu nhiên từ min đến max
+        public int GenerateRandomNumber(int min = 100000, int max = 999999)
+        {
+            return random.Next(min, max);
+        }
+        public int GenerateUniqueNumber(string tableName, string columnName)
+        {
+            DbConnection db = new DbConnection(); // Tạo mới trong hàm luôn, tránh null
+            int number;
+            bool isExist;
+
+            do
+            {
+                number = GenerateRandomNumber();
+                string query = $"SELECT COUNT(*) FROM {tableName} WHERE {columnName} = {number}";
+                DataTable dt = db.ExecuteQuery(query);
+
+                isExist = dt.Rows.Count > 0 && Convert.ToInt32(dt.Rows[0][0]) > 0;
+            }
+            while (isExist);
+
+            return number;
+        }
     }
 }

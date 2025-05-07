@@ -44,6 +44,8 @@ namespace Quanlythuquanweb.Controllers
                     int mathanhvien = countTV;
                     Session["Mathanhvien"] = mathanhvien;
                     ViewBag.Message = "Đăng nhập thành công!";
+                    conn.Close();
+
                     return RedirectToAction("Danhsach", "Thietbi");
                 }
                 else
@@ -57,6 +59,8 @@ namespace Quanlythuquanweb.Controllers
                     if (countNV > 0)
                     {
                         ViewBag.Message = "Đăng nhập thành công!";
+                        conn.Close();
+
                         return RedirectToAction("Index", "Home");
                     }
                     else
@@ -68,7 +72,7 @@ namespace Quanlythuquanweb.Controllers
             }
             catch (Exception ex)
             {
-                ViewBag.Message = "Lỗi: " + ex.Message;
+                ViewBag.Error = "Lỗi: " + ex.Message;
             }
             return View();
         }
@@ -185,10 +189,30 @@ namespace Quanlythuquanweb.Controllers
                 MySqlConnection conn = db.GetConnection();
                 conn.Open();
 
+                string sqlCheck = "SELECT COUNT(*) FROM thanhvien WHERE Taikhoan=@taikhoan";
+                MySqlCommand cmdCheck = new MySqlCommand(sqlCheck, conn);
+                cmdCheck.Parameters.AddWithValue("@taikhoan", taikhoan);
+
+                int count = Convert.ToInt32(cmdCheck.ExecuteScalar()); // Sử dụng ExecuteScalar thay vì DataReader
+
+                if (count > 0)
+                {
+                    ViewBag.Error = "Tên đăng nhập đã tồn tại!";
+                    ViewBag.Matkhau = matkhau;
+                    ViewBag.Taikhoan = taikhoan;
+                    ViewBag.Hoten = hoten;
+                    ViewBag.Sdt = sdt;
+                    ViewBag.Email = email;
+                    ViewBag.Diachi = diachi;
+                    conn.Close();
+                    return View();
+                }
+                int mathanhvien = db.GenerateUniqueNumber("thanhvien", "Mathanhvien");
                 string query = $@"INSERT INTO thanhvien(Mathanhvien, Taikhoan, Matkhau, Hoten, Sdt, Email, Diachi, Trangthai, Ngaydangky) VALUES
-                (1, @taikhoan, @matkhau, @hoten, @sdt, @email, @diachi, @trangthai, @ngaydangky)";
+                (@mathanhvien, @taikhoan, @matkhau, @hoten, @sdt, @email, @diachi, @trangthai, @ngaydangky)";
 
                 MySqlCommand cmd = new MySqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@mathanhvien", mathanhvien);
                 cmd.Parameters.AddWithValue("@taikhoan", taikhoan);
                 cmd.Parameters.AddWithValue("@matkhau", matkhau);
                 cmd.Parameters.AddWithValue("@hoten", hoten);
@@ -202,21 +226,191 @@ namespace Quanlythuquanweb.Controllers
                 if (result > 0)
                 {
                     ViewBag.Message = "Đăng ký thành công!";
-                    return RedirectToAction("Index", "Home");
+                    conn.Close();
+
+                    return RedirectToAction("Login", "Account");
                 }
                 else
                 {
-                    ViewBag.Message = "Đăng ký thất bại!";
+                    ViewBag.Error = "Đăng ký thất bại!";
                 }
                 conn.Close();
 
             }
             catch (Exception ex)
             {
-                ViewBag.Message = "Lỗi: "+ ex.Message;
+                ViewBag.Error = "Lỗi: "+ ex.Message;
             }
             return View();
         }
+        [HttpGet]
+        public ActionResult ForgetPass()
+        {
+            return View("ForgetPass");
+        }
+
+        [HttpPost] 
+        public ActionResult ForgetPass(FormCollection form)
+        {
+            try
+            {
+
+                string taikhoan = form["Taikhoan"];
+                string hoten = form["Hoten"];
+                string sdt = form["Sdt"];
+                string email = form["Email"];
+                
+                ViewBag.Taikhoan = taikhoan;
+                ViewBag.Hoten = hoten;
+                ViewBag.Sdt = sdt;
+                ViewBag.Email = email;
+
+                MySqlConnection conn = db.GetConnection();
+                conn.Open();
+
+                string queryTV = "SELECT Matkhau FROM thanhvien WHERE Taikhoan=@taikhoan AND Hoten=@hoten AND Sdt=@sdt AND Email=@email";
+                //string queryNV = "SELECT Matkhau FROM nhanvien WHERE Taikhoan=@taikhoan AND Hoten=@hoten AND Sdt=@sdt AND Email=@email";
+                
+
+                MySqlCommand cmdTV = new MySqlCommand(queryTV, conn);
+                cmdTV.Parameters.AddWithValue("@taikhoan", taikhoan);
+                cmdTV.Parameters.AddWithValue("@hoten", hoten);
+                cmdTV.Parameters.AddWithValue("@sdt", sdt);
+                cmdTV.Parameters.AddWithValue("@email", email);
+
+                if (form["action"] == "forget")
+                {
+                    object result = cmdTV.ExecuteScalar();
+                    if (result != null)
+                    {
+                        ViewBag.Message = "Mật khẩu của bạn là: " + result.ToString();
+                    }
+                    //else
+                    //{
+                    //    MySqlCommand cmdNV = new MySqlCommand(queryNV, conn);
+                    //    cmdNV.Parameters.AddWithValue("@taikhoan", taikhoan);
+                    //    cmdNV.Parameters.AddWithValue("@hoten", hoten);
+                    //    cmdNV.Parameters.AddWithValue("@sdt", sdt);
+                    //    cmdNV.Parameters.AddWithValue("@email", email);
+
+                    //    object mk = cmdNV.ExecuteScalar();
+                    //    if (mk != null)
+                    //    {
+                    //        ViewBag.Message = "Mật khẩu của bạn là: " + mk.ToString();
+                    //    }
+                    //    else
+                    //    {
+                    //        ViewBag.Error = "Thông tin chưa đúng! Vui lòng kiểm tra lại thông tin!";
+                    //        return View();
+                    //    }
+                    //}
+                    else
+                    {
+                        ViewBag.Error = "Thông tin chưa đúng! Vui lòng kiểm tra lại thông tin!";
+                        return View();
+                    }
+                }
+                if (form["action"] == "reset")
+                {
+                    object result = cmdTV.ExecuteScalar();
+                    if (result != null)
+                    {
+                        TempData["Taikhoan"]=taikhoan;
+                        return RedirectToAction("ChangePass", "Account");
+                    }
+                    //else
+                    //{
+                    //    MySqlCommand cmdNV = new MySqlCommand(queryNV, conn);
+                    //    cmdNV.Parameters.AddWithValue("@taikhoan", taikhoan);
+                    //    cmdNV.Parameters.AddWithValue("@hoten", hoten);
+                    //    cmdNV.Parameters.AddWithValue("@sdt", sdt);
+                    //    cmdNV.Parameters.AddWithValue("@email", email);
+
+                    //    object mk = cmdNV.ExecuteScalar();
+                    //    if (mk != null)
+                    //    {
+                    //        ViewBag.Matkhau = mk.ToString();
+                    //        return RedirectToAction("ChangePass", "Account");
+
+                    //    }
+                        
+                    //}
+                    else
+                    {
+                        ViewBag.Error = "Thông tin chưa đúng! Vui lòng kiểm tra lại thông tin!";
+                        return View();
+                    }
+                }
+
+                conn.Close();
+
+            }
+            catch (Exception ex)
+            {
+                ViewBag.Error = "Lỗi: " + ex.Message;
+            }
+            return View();
+        }
+        [HttpGet]
+        public ActionResult ChangePass()
+        {
+            return View("ChangePass");
+        }
+        [HttpPost]
+        public ActionResult ChangePass(FormCollection form)
+        {
+            try
+            {
+                
+                string matkhaumoi = form["Matkhaumoi"];
+                string xacnhanmatkhaumoi = form["Xacnhanmatkhaumoi"];
+                string taikhoan = TempData["Taikhoan"] as string;
+                TempData.Keep("Taikhoan");
+                ViewBag.Taikhoan = taikhoan;
+                if (matkhaumoi != xacnhanmatkhaumoi)
+                {
+                    ViewBag.Matkhaumoi = matkhaumoi;
+                    ViewBag.Xacnhanmatkhaumoi = xacnhanmatkhaumoi;
+                    ViewBag.Error = "Mật khẩu mới và Xác nhận mật khẩu mới không khớp!";
+
+                    return View();
+                }
+                MySqlConnection conn = db.GetConnection();
+                conn.Open();
+                //string query = "SELECT Mathanhvien FROM thanhvien WHERE Taikhoan=@taikhoan";
+                //MySqlCommand cmd = new MySqlCommand(query, conn);
+                //cmd.Parameters.AddWithValue("@Taikhoan", taikhoan);
+                //string mathanhvien = cmd.ExecuteScalar().ToString();
+                string sql = "UPDATE thanhvien SET Matkhau=@matkhau WHERE Taikhoan=@taikhoan";
+                MySqlCommand cmdUpdate = new MySqlCommand(sql, conn);
+                cmdUpdate.Parameters.AddWithValue("@Matkhau", matkhaumoi);
+                cmdUpdate.Parameters.AddWithValue("@Taikhoan", taikhoan);
+                int rs = cmdUpdate.ExecuteNonQuery();
+                if(rs> 0)
+                {
+                    ViewBag.Message = "Đổi mật khẩu thành công!";
+                    conn.Close();
+                    return RedirectToAction("Login", "Account");
+                }
+                else
+                {
+                    ViewBag.Error = "Đổi mật khẩu thất bại!";
+                    ViewBag.Matkhaumoi = matkhaumoi;
+                    ViewBag.Xacnhanmatkhaumoi = xacnhanmatkhaumoi;
+                    conn.Close();
+                    return View();
+                }
+                //conn.Close();
+            }
+            catch (Exception ex)
+            {
+                ViewBag.Error = "Lỗi: " + ex.Message;
+            }
+
+
+            return View();
+        }
+
 
     }
 }
