@@ -1,8 +1,8 @@
 ﻿
 @{
     Layout = null;
-    
-    
+
+
 }
 
 @model List<Quanlythuquanweb.Models.Thietbi>
@@ -73,7 +73,7 @@
             }
 
             header .icons .profile-circle {
-                width: 300px;  
+                width: 30px;
                 height: 30px;
                 border-radius: 50%;
                 background-color: #cbb994;
@@ -274,43 +274,6 @@
     </style>
 </head>
 <body>
-<<<<<<< HEAD
-      <header class="top-bar">
-            <div class="logo">THUQUAN.COM</div>
-            <nav>
-                <a href="@Url.Action("Danhsach", "Thietbi")">Trang chủ</a>
-                <a href="#">Thủ tục</a>
-                <a href="#">Liên hệ</a>
-                <a href="@Url.Action("UserProfile", "Home")">Cá nhân</a>
-            </nav>
-            <div class="icons">
-                <svg class="bell" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M12 24c1.104 0 1.99-.896 1.99-2h-3.98c0 1.104.886 2 1.99 2zm6.364-6v-5c0-3.079-1.639-5.641-4.364-6.32v-.68c0-.826-.675-1.5-1.5-1.5s-1.5.674-1.5 1.5v.68c-2.725.679-4.364 3.241-4.364 6.32v5l-1.636 1.636v.364h15v-.364l-1.636-1.636z" /></svg>
-                <div class="profile-circle">
-                    
-                </div>
-            </div>
-        </header>
-
-        <div class="carousel-container" style="text-align: center; margin: 30px auto; ">
-            <div class="carousel">
-                <img class="carousel-image" src="~/Resoucres/Images/banner1.png" alt="Banner 1">
-                <img class="carousel-image" src="~/Resoucres/Images/banner2.png" alt="Banner 2">
-                <img class="carousel-image" src="~/Resoucres/Images/banner3.png" alt="Banner 3">
-                <img class="carousel-image" src="~/Resoucres/Images/banner4.png" alt="Banner 4">
-            </div>
-            <div class="carousel-buttons">
-                <button onclick="prevSlide()">❮</button>
-                <button onclick="nextSlide()">❯</button>
-            </div>
-        </div>
-
-        <!-- MAIN -->
-        <main>
-            <h2 style="font-size: 32px; margin-left: 24px; color: #2d1700">Danh sách thiết bị</h2>
-            <hr />
-
-            @if (Model.Count == 0)
-=======
     <header class="top-bar">
         <div class="logo">THUQUAN.COM</div>
         <nav>
@@ -324,65 +287,14 @@
                 var tendangnhap = Session["Taikhoan"];
             }
             @if (tendangnhap == null)
->>>>>>> a42f68a1f9d4b9ed57955a3598ecf0563f36d738
             {
                 <div class="login"><a href="@Url.Action("Login", "Account")">Đăng nhập</a></div>
                 <div class="signup"><a href="@Url.Action("SignUp", "Account")">Đăng kí</a></div>
             }
             else
-<<<<<<< HEAD
-            { <div style="text-align:start; margin: 20px 0 ; display:flex ">
-                     <p style="margin :5px 10px; font-size:24px ;text-decoration:blink; ">Tìm kiếm thiết bị</p>
-                    <input type="text" id="searchInput" placeholder="Tìm kiếm theo tên thiết bị..." style="width: 300px; padding: 10px; border-radius: 6px; border: 1px solid #ccc;">
-                </div>
-                <div class="table-container">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Mã thiết bị</th>
-                                <th>Tên thiết bị</th>
-                                <th>Giá thuê (VNĐ)</th>
-                                <th>Trạng thái</th>
-                                <th>Hành động</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            @foreach (var tb in Model)
-                            {
-                                <tr>
-                                    <td>@tb.Mathietbi</td>
-                                    <td>@tb.Tenthietbi</td>
-                                    <td>@tb.Giathue</td>
-                                    <td>
-                                        @if (tb.Trangthai == "Đang trống")
-                                        {
-                                            <span style="color: green; font-weight: bold;">@tb.Trangthai</span>
-                                        }
-                                        else
-                                        {
-                                            <span style="color: red; font-weight: bold;">@tb.Trangthai</span>
-                                        }
-                                    </td>
-                                    <td>
-                                        @if (tb.Trangthai == "Đang trống")
-                                        {
-                                            <a href="@Url.Action("DatCho", "Thietbi", new { mathietbi = tb.Mathietbi })" class="btn btn-primary">Đặt chỗ</a>
-                                        }
-                                        else
-                                        {
-                                            <span style="color: gray;">Không khả dụng</span>
-                                        }
-                                    </td>
-                                </tr>
-                            }
-                        </tbody>
-                    </table>
-                </div>
-=======
             {
                 <div class="login-name">Xin chào, @tendangnhap </div>
                 <div class="logout">Đăng xuất</div>
->>>>>>> a42f68a1f9d4b9ed57955a3598ecf0563f36d738
             }
             <svg class="bell" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M12 24c1.104 0 1.99-.896 1.99-2h-3.98c0 1.104.886 2 1.99 2zm6.364-6v-5c0-3.079-1.639-5.641-4.364-6.32v-.68c0-.826-.675-1.5-1.5-1.5s-1.5.674-1.5 1.5v.68c-2.725.679-4.364 3.241-4.364 6.32v5l-1.636 1.636v.364h15v-.364l-1.636-1.636z" /></svg>
             <div class="profile-circle"></div>
