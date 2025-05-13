@@ -11,6 +11,10 @@
       "RelativeMoniker": "D:0:0:{49F3E427-3439-453F-9BB8-E8B5FA486118}|Quanlythuquanweb\\Quanlythuquanweb.csproj|solutionrelative:quanlythuquanweb\\views\\home\\userprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{49F3E427-3439-453F-9BB8-E8B5FA486118}|Quanlythuquanweb\\Quanlythuquanweb.csproj|d:\\code\\csharp\\quanlythuquan_web\\quanlythuquanweb\\views\\thietbi\\datcho.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{49F3E427-3439-453F-9BB8-E8B5FA486118}|Quanlythuquanweb\\Quanlythuquanweb.csproj|solutionrelative:quanlythuquanweb\\views\\thietbi\\datcho.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{49F3E427-3439-453F-9BB8-E8B5FA486118}|Quanlythuquanweb\\Quanlythuquanweb.csproj|d:\\code\\csharp\\quanlythuquan_web\\quanlythuquanweb\\controllers\\thietbicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{49F3E427-3439-453F-9BB8-E8B5FA486118}|Quanlythuquanweb\\Quanlythuquanweb.csproj|solutionrelative:quanlythuquanweb\\controllers\\thietbicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -54,7 +58,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -74,13 +78,26 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DatCho.cshtml",
+              "DocumentMoniker": "D:\\code\\Csharp\\quanlythuquan_web\\Quanlythuquanweb\\Views\\Thietbi\\DatCho.cshtml",
+              "RelativeDocumentMoniker": "Quanlythuquanweb\\Views\\Thietbi\\DatCho.cshtml",
+              "ToolTip": "D:\\code\\Csharp\\quanlythuquan_web\\Quanlythuquanweb\\Views\\Thietbi\\DatCho.cshtml",
+              "RelativeToolTip": "Quanlythuquanweb\\Views\\Thietbi\\DatCho.cshtml",
+              "ViewState": "AgIAALQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-13T14:34:31.411Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Danhsach.cshtml",
               "DocumentMoniker": "D:\\code\\Csharp\\quanlythuquan_web\\Quanlythuquanweb\\Views\\Thietbi\\Danhsach.cshtml",
               "RelativeDocumentMoniker": "Quanlythuquanweb\\Views\\Thietbi\\Danhsach.cshtml",
               "ToolTip": "D:\\code\\Csharp\\quanlythuquan_web\\Quanlythuquanweb\\Views\\Thietbi\\Danhsach.cshtml",
               "RelativeToolTip": "Quanlythuquanweb\\Views\\Thietbi\\Danhsach.cshtml",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAmwHAAAAALAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYBAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-05-13T13:15:57.964Z",
               "EditorCaption": ""
@@ -93,14 +110,14 @@
               "RelativeDocumentMoniker": "Quanlythuquanweb\\Views\\Home\\UserProfile.cshtml",
               "ToolTip": "D:\\code\\Csharp\\quanlythuquan_web\\Quanlythuquanweb\\Views\\Home\\UserProfile.cshtml",
               "RelativeToolTip": "Quanlythuquanweb\\Views\\Home\\UserProfile.cshtml",
-              "ViewState": "AgIAAGMAAAAAAAAAAAAqwHYAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAMIBAAAAAAAAAAAAANsBAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-05-13T13:15:31.178Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\code\\Csharp\\quanlythuquan_web\\Quanlythuquanweb\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Quanlythuquanweb\\Views\\Home\\Index.cshtml",
@@ -113,7 +130,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "ChangePass.cshtml",
               "DocumentMoniker": "D:\\code\\Csharp\\quanlythuquan_web\\Quanlythuquanweb\\Views\\Account\\ChangePass.cshtml",
               "RelativeDocumentMoniker": "Quanlythuquanweb\\Views\\Account\\ChangePass.cshtml",
@@ -125,7 +142,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "ForgetPass.cshtml",
               "DocumentMoniker": "D:\\code\\Csharp\\quanlythuquan_web\\Quanlythuquanweb\\Views\\Account\\ForgetPass.cshtml",
               "RelativeDocumentMoniker": "Quanlythuquanweb\\Views\\Account\\ForgetPass.cshtml",
@@ -137,7 +154,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "SignUp.cshtml",
               "DocumentMoniker": "D:\\code\\Csharp\\quanlythuquan_web\\Quanlythuquanweb\\Views\\Account\\SignUp.cshtml",
               "RelativeDocumentMoniker": "Quanlythuquanweb\\Views\\Account\\SignUp.cshtml",
@@ -150,7 +167,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "AccountController.cs",
               "DocumentMoniker": "D:\\code\\Csharp\\quanlythuquan_web\\Quanlythuquanweb\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "Quanlythuquanweb\\Controllers\\AccountController.cs",
@@ -163,7 +180,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "HomeController.cs",
               "DocumentMoniker": "D:\\code\\Csharp\\quanlythuquan_web\\Quanlythuquanweb\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Quanlythuquanweb\\Controllers\\HomeController.cs",
@@ -176,7 +193,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "ThietbiController.cs",
               "DocumentMoniker": "D:\\code\\Csharp\\quanlythuquan_web\\Quanlythuquanweb\\Controllers\\ThietbiController.cs",
               "RelativeDocumentMoniker": "Quanlythuquanweb\\Controllers\\ThietbiController.cs",
@@ -189,7 +206,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "DbConnection.cs",
               "DocumentMoniker": "D:\\code\\Csharp\\quanlythuquan_web\\Quanlythuquanweb\\Helpers\\DbConnection.cs",
               "RelativeDocumentMoniker": "Quanlythuquanweb\\Helpers\\DbConnection.cs",
@@ -201,7 +218,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Login.cshtml",
               "DocumentMoniker": "D:\\code\\Csharp\\quanlythuquan_web\\Quanlythuquanweb\\Views\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "Quanlythuquanweb\\Views\\Account\\Login.cshtml",

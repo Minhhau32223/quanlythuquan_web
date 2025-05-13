@@ -666,7 +666,6 @@ E:\CS\Web\quanlythuquan_web\Quanlythuquanweb\obj\Debug\Quanlythuquanweb.csproj.C
 E:\CS\Web\quanlythuquan_web\Quanlythuquanweb\obj\Debug\Quanlyth.6BA3191B.Up2Date
 E:\CS\Web\quanlythuquan_web\Quanlythuquanweb\obj\Debug\Quanlythuquanweb.dll
 E:\CS\Web\quanlythuquan_web\Quanlythuquanweb\obj\Debug\Quanlythuquanweb.pdb
-<<<<<<< HEAD
 D:\code\Csharp\quanlythuquan_web\Quanlythuquanweb\bin\Quanlythuquanweb.dll.config
 D:\code\Csharp\quanlythuquan_web\Quanlythuquanweb\bin\Quanlythuquanweb.dll
 D:\code\Csharp\quanlythuquan_web\Quanlythuquanweb\bin\Quanlythuquanweb.pdb
@@ -778,6 +777,5 @@ D:\code\Csharp\quanlythuquan_web\Quanlythuquanweb\obj\Debug\Quanlythuquanweb.csp
 D:\code\Csharp\quanlythuquan_web\Quanlythuquanweb\obj\Debug\Quanlyth.6BA3191B.Up2Date
 D:\code\Csharp\quanlythuquan_web\Quanlythuquanweb\obj\Debug\Quanlythuquanweb.dll
 D:\code\Csharp\quanlythuquan_web\Quanlythuquanweb\obj\Debug\Quanlythuquanweb.pdb
-=======
 >>>>>>> 3b41be1dced60b423709129de44379d97d61ff03
 >>>>>>> main
