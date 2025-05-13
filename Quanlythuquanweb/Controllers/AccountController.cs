@@ -43,6 +43,8 @@ namespace Quanlythuquanweb.Controllers
                 {
                     int mathanhvien = countTV;
                     Session["Mathanhvien"] = mathanhvien;
+                    string tentaikhoan = taikhoan;
+                    Session["Taikhoan"] = tentaikhoan;
                     ViewBag.Message = "Đăng nhập thành công!";
                     conn.Close();
 
