@@ -248,6 +248,8 @@
     <Content Include="Views\Thietbi\Danhsach.cshtml" />
     <Content Include="Views\Thietbi\DatCho.cshtml" />
     <Content Include="Views\Thietbi\ThanhCong.cshtml" />
+    <Content Include="Views\Account\ForgetPass.cshtml" />
+    <Content Include="Views\Account\ChangePass.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

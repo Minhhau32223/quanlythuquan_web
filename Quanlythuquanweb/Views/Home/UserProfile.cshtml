@@ -134,17 +134,17 @@
         }
 
     /* Main content */
-    .main-content {
+    /*.main-content {
         display: flex;
         margin: 30px 60px 60px 60px;
         background-color: #fffdeb;
         border: 1px solid #ccc;
         padding: 15px;
         min-height: 280px;
-    }
+    }*/
 
     /* Sidebar */
-    .sidebar {
+    /*.sidebar {
         width: 200px;
         background-color: #ac7f49;
         border-radius: 4px 0 0 4px;
@@ -175,7 +175,99 @@
                 background-color: #7a4406;
                 color: white;
                 border-left-color: #4a2400;
+            }*/
+    /* Main content */
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        margin: 30px 60px;
+        background-color: #fdfdfd;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        padding: 20px;
+        min-height: 400px;
+        gap: 20px;
+    }
+
+    /* Sidebar */
+    .sidebar {
+        width: 220px;
+        background-color: #f6f1e9;
+        border-radius: 10px;
+        box-shadow: inset -2px 0 4px rgba(0, 0, 0, 0.05);
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+        .sidebar button {
+            background-color: transparent;
+            border: none;
+            padding: 14px 24px;
+            font-weight: 500;
+            font-size: 15px;
+            color: #5a4632;
+            text-align: left;
+            cursor: pointer;
+            border-left: 4px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+            .sidebar button:hover {
+                background-color: #e6dfd4;
+                border-left-color: #c4a672;
+                color: #2f1e0e;
             }
+
+            .sidebar button.active {
+                background-color: #d9cbb5;
+                border-left-color: #b58e58;
+                color: #2f1e0e;
+                font-weight: 600;
+            }
+
+    /* Table section (bảng hiển thị thông tin) */
+    .table-container {
+        flex: 1;
+        background-color: #ffffff;
+        padding: 20px;
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        overflow-x: auto;
+    }
+
+    /* Button area dưới bảng */
+    .button-group {
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+        padding-top: 10px;
+    }
+
+        .button-group button {
+            padding: 10px 20px;
+            font-size: 15px;
+            font-weight: 500;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .button-group .btn-save {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .button-group .btn-cancel {
+            background-color: #f44336;
+            color: white;
+        }
+
+        .button-group button:hover {
+            opacity: 0.9;
+        }
+
 
     /* Content area */
     .content-area {
@@ -497,7 +589,7 @@
                     else
                     {
                         <tr>
-                            <td colspan="7">Không có thiết bị nào đã đặt.</td>
+                            <td colspan="8">Không có thiết bị nào đã đặt.</td>
                         </tr>
                     }
                 </tbody>
@@ -509,11 +601,11 @@
             @if (ViewBag.profile != null)
             {
                 ThanhVien data = (ThanhVien)ViewBag.profile;
-                <p>Họ tên: @data.HoTen</p>
-                <p>Email: @data.Email</p>
-                <p>Số điện thoại: +84 @data.Sdt</p>
-                <p>Địa chỉ: @data.DiaChi</p>
-                <p>Ngày đăng ký: @data.Ngaydangky</p>
+                <p><strong>Họ tên:</strong> @data.HoTen</p>
+                <p><strong>Email:</strong> @data.Email</p>
+                <p><strong>Số điện thoại:</strong> +84(@data.Sdt)</p>
+                <p><strong>Địa chỉ:</strong> @data.DiaChi</p>
+                <p><strong>Ngày đăng ký:</strong> @data.Ngaydangky</p>
             }
             else
             {

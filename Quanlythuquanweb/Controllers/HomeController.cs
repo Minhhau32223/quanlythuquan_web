@@ -130,8 +130,7 @@ namespace Quanlythuquanweb.Controllers
             }
             else
             {
-                //return RedirectToAction("Login", "Home");
-                return View();
+                return RedirectToAction("Login", "Home");
             }
             
         }

@@ -45,19 +45,37 @@
 <body>
     <div class="login-form">
         <h2 class="text-center mb-4">Đăng nhập</h2>
+        @if (ViewBag.Error != null)
+        {
+            <div class="alert alert-danger">@ViewBag.Error</div>
+        }
         @using (Html.BeginForm("Login", "Account", FormMethod.Post))
         {
             <div class="mb-3">
                 @Html.Label("Tên đăng nhập:", htmlAttributes: new { @class = "form-label" })
-                @Html.TextBox("Taikhoan", null, new { @class = "form-control" })
+                @Html.TextBox("Taikhoan", null, new {
+               @class = "form-control",
+               required = "required",
+               type = "text",
+               pattern = @"^[a-zA-Z0-9]{4,30}$",
+               title = "Tên đăng nhập phải từ 4 đến 30 ký tự, không chứa ký tự đặc biệt!"
+           })
             </div>
 
             <div class="mb-3">
                 @Html.Label("Mật khẩu:", htmlAttributes: new { @class = "form-label" })
-                @Html.TextBox("Matkhau", null, new { @class = "form-control" })
+                @Html.Password("Matkhau", null, new {
+               @class = "form-control",
+               required = "required",
+               type = "password",
+               pattern = @".{6,25}",
+               title = "Mật khẩu từ 6 đến 25 ký tự!"
+           })
             </div>
             <button type="submit" class="btn btn-custom">Đăng nhập</button>
+            <div class="register-link"><a href="@Url.Action("forgetPass", "Account")">Quên mật khẩu?</a></div>
             <div class="register-link">Bạn chưa có tài khoản? <a href="@Url.Action("SignUp", "Account")">Đăng ký ngay!</a></div>
+
         }
     </div>
     
