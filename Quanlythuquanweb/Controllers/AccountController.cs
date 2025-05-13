@@ -413,6 +413,11 @@ namespace Quanlythuquanweb.Controllers
             return View();
         }
 
+        public ActionResult Logout()
+        {
+            Session.Clear(); // Xóa tất cả session
+            return RedirectToAction("Danhsach", "Thietbi");
+        }
 
     }
 }

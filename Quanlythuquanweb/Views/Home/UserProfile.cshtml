@@ -114,6 +114,21 @@
             .header-banner .profile-info p {
                 margin: 5px 0;
             }
+    header .icons .signup, .login, .logout a {
+        color: brown;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+        header .icons .signup:hover,
+        header .icons .logout:hover,
+        header .icons .login a:hover {
+            background-color: chocolate;
+            color: bisque;
+        }
+    header .icons .login-name {
+        color: brown;
+    }
 
         .header-banner .section-label {
             font-size: 14px;
@@ -396,7 +411,7 @@
         text-align: center;
     }
 
-    }
+    
 
     .btn-edit {
         background-color: #2d1700;
@@ -458,6 +473,23 @@
             <a href="#">Cá nhân</a>
         </nav>
         <div class="icons">
+            <div class="icons">
+                @{
+                    var tendangnhap = Session["Taikhoan"];
+                }
+                @if (tendangnhap == null)
+                {
+                    <div class="login"><a class="login" href="@Url.Action("Login", "Account")">Đăng nhập</a></div>
+                    <div class="signup"><a class="signup" href="@Url.Action("SignUp", "Account")">Đăng kí</a></div>
+                }
+                else
+                {
+                    <div class="login-name">Xin chào, @tendangnhap </div>
+                    <div class="logout"><a class="logout" href="@Url.Action("Logout","Account")">Đăng xuất</a></div>
+                }
+                <svg class="bell" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M12 24c1.104 0 1.99-.896 1.99-2h-3.98c0 1.104.886 2 1.99 2zm6.364-6v-5c0-3.079-1.639-5.641-4.364-6.32v-.68c0-.826-.675-1.5-1.5-1.5s-1.5.674-1.5 1.5v.68c-2.725.679-4.364 3.241-4.364 6.32v5l-1.636 1.636v.364h15v-.364l-1.636-1.636z" /></svg>
+                <div class="profile-circle"></div>
+            </div>
             <svg class="bell" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M12 24c1.104 0 1.99-.896 1.99-2h-3.98c0 1.104.886 2 1.99 2zm6.364-6v-5c0-3.079-1.639-5.641-4.364-6.32v-.68c0-.826-.675-1.5-1.5-1.5s-1.5.674-1.5 1.5v.68c-2.725.679-4.364 3.241-4.364 6.32v5l-1.636 1.636v.364h15v-.364l-1.636-1.636z" /></svg>
             <div class="profile-circle"></div>
         </div>
