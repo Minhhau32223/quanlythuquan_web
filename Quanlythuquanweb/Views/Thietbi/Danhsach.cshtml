@@ -308,7 +308,7 @@
                                     <td>@tb.Tenthietbi</td>
                                     <td>@tb.Giathue</td>
                                     <td>
-                                        @if (tb.Trangthai.ToLower() == "đang trống")
+                                        @if (tb.Trangthai == "Đang trống")
                                         {
                                             <span style="color: green; font-weight: bold;">@tb.Trangthai</span>
                                         }
@@ -318,7 +318,7 @@
                                         }
                                     </td>
                                     <td>
-                                        @if (tb.Trangthai.ToLower().Trim() == "trống")
+                                        @if (tb.Trangthai == "Đang trống")
                                         {
                                             <a href="@Url.Action("DatCho", "Thietbi", new { mathietbi = tb.Mathietbi })" class="btn btn-primary">Đặt chỗ</a>
                                         }
