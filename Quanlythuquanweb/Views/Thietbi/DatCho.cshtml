@@ -169,7 +169,7 @@
                 <input type="number" name="soluong" min="1" value="1" required /><br />
 
                 <label>Ngày mượn:</label>
-                <input type="date" name="ngaymuon" required /><br />
+                <input type="date" name="ngaymuon" required min="@DateTime.Now.ToString()" /><br />
 
 
                 <label>Thanh toán: :</label>
@@ -184,7 +184,19 @@
             </form>
         </div>
 
-       
+
     </div>
+    <script>
+    document.querySelector('form').addEventListener('submit', function (e) {
+        const ngayMuon = new Date(document.querySelector('input[name="ngaymuon"]').value);
+        const today = new Date();
+        today.setHours(0, 0, 0, 0); // Reset giờ để so sánh chính xác
+
+        if (ngayMuon < today) {
+            alert("Không được chọn ngày mượn trong quá khứ!");
+            e.preventDefault(); // Ngăn form submit
+        }
+    });
+    </script>
 </body>
 </html>

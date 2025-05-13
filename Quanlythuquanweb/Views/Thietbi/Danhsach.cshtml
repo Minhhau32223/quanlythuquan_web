@@ -1,8 +1,7 @@
 ﻿
 @{
     Layout = null;
-    
-    
+
 }
 
 @model List<Quanlythuquanweb.Models.Thietbi>
@@ -274,7 +273,47 @@
     </style>
 </head>
 <body>
+<<<<<<< HEAD
     <header class="top-bar">
+=======
+<<<<<<< HEAD
+      <header class="top-bar">
+            <div class="logo">THUQUAN.COM</div>
+            <nav>
+                <a href="@Url.Action("Danhsach", "Thietbi")">Trang chủ</a>
+                <a href="#">Thủ tục</a>
+                <a href="#">Liên hệ</a>
+                <a href="@Url.Action("UserProfile", "Home")">Cá nhân</a>
+            </nav>
+            <div class="icons">
+                <svg class="bell" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M12 24c1.104 0 1.99-.896 1.99-2h-3.98c0 1.104.886 2 1.99 2zm6.364-6v-5c0-3.079-1.639-5.641-4.364-6.32v-.68c0-.826-.675-1.5-1.5-1.5s-1.5.674-1.5 1.5v.68c-2.725.679-4.364 3.241-4.364 6.32v5l-1.636 1.636v.364h15v-.364l-1.636-1.636z" /></svg>
+                <div class="profile-circle">
+                    
+                </div>
+            </div>
+        </header>
+
+        <div class="carousel-container" style="text-align: center; margin: 30px auto; ">
+            <div class="carousel">
+                <img class="carousel-image" src="~/Resoucres/Images/banner1.png" alt="Banner 1">
+                <img class="carousel-image" src="~/Resoucres/Images/banner2.png" alt="Banner 2">
+                <img class="carousel-image" src="~/Resoucres/Images/banner3.png" alt="Banner 3">
+                <img class="carousel-image" src="~/Resoucres/Images/banner4.png" alt="Banner 4">
+            </div>
+            <div class="carousel-buttons">
+                <button onclick="prevSlide()">❮</button>
+                <button onclick="nextSlide()">❯</button>
+            </div>
+        </div>
+
+        <!-- MAIN -->
+        <main>
+            <h2 style="font-size: 32px; margin-left: 24px; color: #2d1700">Danh sách thiết bị</h2>
+            <hr />
+        
+           
+         <header class="top-bar">
+>>>>>>> main
         <div class="logo">THUQUAN.COM</div>
         <nav>
             <a href="@Url.Action("Danhsach", "Thietbi")">Trang chủ</a>
@@ -288,13 +327,13 @@
             }
             @if (tendangnhap == null)
             {
-                <div class="login"><a href="@Url.Action("Login", "Account")">Đăng nhập</a></div>
-                <div class="signup"><a href="@Url.Action("SignUp", "Account")">Đăng kí</a></div>
+                <div class="login"><a class="login" href="@Url.Action("Login", "Account")">Đăng nhập</a></div>
+                <div class="signup"><a class="signup" href="@Url.Action("SignUp", "Account")">Đăng kí</a></div>
             }
             else
             {
                 <div class="login-name">Xin chào, @tendangnhap </div>
-                <div class="logout">Đăng xuất</div>
+                <div class="logout"><a class="logout" href="@Url.Action("Logout","Account")">Đăng xuất</a></div>
             }
             <svg class="bell" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M12 24c1.104 0 1.99-.896 1.99-2h-3.98c0 1.104.886 2 1.99 2zm6.364-6v-5c0-3.079-1.639-5.641-4.364-6.32v-.68c0-.826-.675-1.5-1.5-1.5s-1.5.674-1.5 1.5v.68c-2.725.679-4.364 3.241-4.364 6.32v5l-1.636 1.636v.364h15v-.364l-1.636-1.636z" /></svg>
             <div class="profile-circle"></div>
