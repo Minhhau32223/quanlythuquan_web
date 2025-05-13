@@ -1,29 +1,49 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\CS\\Web\\quanlythuquan_web\\",
+  "WorkspaceRootPath": "D:\\code\\Csharp\\quanlythuquan_web\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{49F3E427-3439-453F-9BB8-E8B5FA486118}|Quanlythuquanweb\\Quanlythuquanweb.csproj|E:\\CS\\Web\\quanlythuquan_web\\quanlythuquanweb\\views\\account\\signup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{49F3E427-3439-453F-9BB8-E8B5FA486118}|Quanlythuquanweb\\Quanlythuquanweb.csproj|solutionrelative:quanlythuquanweb\\views\\account\\signup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{49F3E427-3439-453F-9BB8-E8B5FA486118}|Quanlythuquanweb\\Quanlythuquanweb.csproj|d:\\code\\csharp\\quanlythuquan_web\\quanlythuquanweb\\views\\thietbi\\danhsach.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{49F3E427-3439-453F-9BB8-E8B5FA486118}|Quanlythuquanweb\\Quanlythuquanweb.csproj|solutionrelative:quanlythuquanweb\\views\\thietbi\\danhsach.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{49F3E427-3439-453F-9BB8-E8B5FA486118}|Quanlythuquanweb\\Quanlythuquanweb.csproj|E:\\CS\\Web\\quanlythuquan_web\\quanlythuquanweb\\views\\account\\forgetpass.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{49F3E427-3439-453F-9BB8-E8B5FA486118}|Quanlythuquanweb\\Quanlythuquanweb.csproj|solutionrelative:quanlythuquanweb\\views\\account\\forgetpass.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{49F3E427-3439-453F-9BB8-E8B5FA486118}|Quanlythuquanweb\\Quanlythuquanweb.csproj|d:\\code\\csharp\\quanlythuquan_web\\quanlythuquanweb\\views\\home\\userprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{49F3E427-3439-453F-9BB8-E8B5FA486118}|Quanlythuquanweb\\Quanlythuquanweb.csproj|solutionrelative:quanlythuquanweb\\views\\home\\userprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{49F3E427-3439-453F-9BB8-E8B5FA486118}|Quanlythuquanweb\\Quanlythuquanweb.csproj|E:\\CS\\Web\\quanlythuquan_web\\quanlythuquanweb\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{49F3E427-3439-453F-9BB8-E8B5FA486118}|Quanlythuquanweb\\Quanlythuquanweb.csproj|d:\\code\\csharp\\quanlythuquan_web\\quanlythuquanweb\\controllers\\thietbicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49F3E427-3439-453F-9BB8-E8B5FA486118}|Quanlythuquanweb\\Quanlythuquanweb.csproj|solutionrelative:quanlythuquanweb\\controllers\\thietbicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49F3E427-3439-453F-9BB8-E8B5FA486118}|Quanlythuquanweb\\Quanlythuquanweb.csproj|D:\\code\\Csharp\\quanlythuquan_web\\quanlythuquanweb\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{49F3E427-3439-453F-9BB8-E8B5FA486118}|Quanlythuquanweb\\Quanlythuquanweb.csproj|solutionrelative:quanlythuquanweb\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{49F3E427-3439-453F-9BB8-E8B5FA486118}|Quanlythuquanweb\\Quanlythuquanweb.csproj|E:\\CS\\Web\\quanlythuquan_web\\quanlythuquanweb\\helpers\\dbconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{49F3E427-3439-453F-9BB8-E8B5FA486118}|Quanlythuquanweb\\Quanlythuquanweb.csproj|d:\\code\\csharp\\quanlythuquan_web\\quanlythuquanweb\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49F3E427-3439-453F-9BB8-E8B5FA486118}|Quanlythuquanweb\\Quanlythuquanweb.csproj|solutionrelative:quanlythuquanweb\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49F3E427-3439-453F-9BB8-E8B5FA486118}|Quanlythuquanweb\\Quanlythuquanweb.csproj|d:\\code\\csharp\\quanlythuquan_web\\quanlythuquanweb\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{49F3E427-3439-453F-9BB8-E8B5FA486118}|Quanlythuquanweb\\Quanlythuquanweb.csproj|solutionrelative:quanlythuquanweb\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49F3E427-3439-453F-9BB8-E8B5FA486118}|Quanlythuquanweb\\Quanlythuquanweb.csproj|d:\\code\\csharp\\quanlythuquan_web\\quanlythuquanweb\\views\\account\\signup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{49F3E427-3439-453F-9BB8-E8B5FA486118}|Quanlythuquanweb\\Quanlythuquanweb.csproj|solutionrelative:quanlythuquanweb\\views\\account\\signup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49F3E427-3439-453F-9BB8-E8B5FA486118}|Quanlythuquanweb\\Quanlythuquanweb.csproj|D:\\code\\Csharp\\quanlythuquan_web\\quanlythuquanweb\\views\\account\\forgetpass.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{49F3E427-3439-453F-9BB8-E8B5FA486118}|Quanlythuquanweb\\Quanlythuquanweb.csproj|solutionrelative:quanlythuquanweb\\views\\account\\forgetpass.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49F3E427-3439-453F-9BB8-E8B5FA486118}|Quanlythuquanweb\\Quanlythuquanweb.csproj|D:\\code\\Csharp\\quanlythuquan_web\\quanlythuquanweb\\helpers\\dbconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{49F3E427-3439-453F-9BB8-E8B5FA486118}|Quanlythuquanweb\\Quanlythuquanweb.csproj|solutionrelative:quanlythuquanweb\\helpers\\dbconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{49F3E427-3439-453F-9BB8-E8B5FA486118}|Quanlythuquanweb\\Quanlythuquanweb.csproj|E:\\CS\\Web\\quanlythuquan_web\\quanlythuquanweb\\views\\account\\changepass.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{49F3E427-3439-453F-9BB8-E8B5FA486118}|Quanlythuquanweb\\Quanlythuquanweb.csproj|D:\\code\\Csharp\\quanlythuquan_web\\quanlythuquanweb\\views\\account\\changepass.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{49F3E427-3439-453F-9BB8-E8B5FA486118}|Quanlythuquanweb\\Quanlythuquanweb.csproj|solutionrelative:quanlythuquanweb\\views\\account\\changepass.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{49F3E427-3439-453F-9BB8-E8B5FA486118}|Quanlythuquanweb\\Quanlythuquanweb.csproj|E:\\CS\\Web\\quanlythuquan_web\\quanlythuquanweb\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{49F3E427-3439-453F-9BB8-E8B5FA486118}|Quanlythuquanweb\\Quanlythuquanweb.csproj|D:\\code\\Csharp\\quanlythuquan_web\\quanlythuquanweb\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{49F3E427-3439-453F-9BB8-E8B5FA486118}|Quanlythuquanweb\\Quanlythuquanweb.csproj|solutionrelative:quanlythuquanweb\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
@@ -34,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,79 +74,142 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DbConnection.cs",
-              "DocumentMoniker": "E:\\CS\\Web\\quanlythuquan_web\\Quanlythuquanweb\\Helpers\\DbConnection.cs",
-              "RelativeDocumentMoniker": "Quanlythuquanweb\\Helpers\\DbConnection.cs",
-              "ToolTip": "E:\\CS\\Web\\quanlythuquan_web\\Quanlythuquanweb\\Helpers\\DbConnection.cs",
-              "RelativeToolTip": "Quanlythuquanweb\\Helpers\\DbConnection.cs",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAcwFsAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T04:09:17.082Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ChangePass.cshtml",
-              "DocumentMoniker": "E:\\CS\\Web\\quanlythuquan_web\\Quanlythuquanweb\\Views\\Account\\ChangePass.cshtml",
-              "RelativeDocumentMoniker": "Quanlythuquanweb\\Views\\Account\\ChangePass.cshtml",
-              "ToolTip": "E:\\CS\\Web\\quanlythuquan_web\\Quanlythuquanweb\\Views\\Account\\ChangePass.cshtml",
-              "RelativeToolTip": "Quanlythuquanweb\\Views\\Account\\ChangePass.cshtml",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAwwGcAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Danhsach.cshtml",
+              "DocumentMoniker": "D:\\code\\Csharp\\quanlythuquan_web\\Quanlythuquanweb\\Views\\Thietbi\\Danhsach.cshtml",
+              "RelativeDocumentMoniker": "Quanlythuquanweb\\Views\\Thietbi\\Danhsach.cshtml",
+              "ToolTip": "D:\\code\\Csharp\\quanlythuquan_web\\Quanlythuquanweb\\Views\\Thietbi\\Danhsach.cshtml",
+              "RelativeToolTip": "Quanlythuquanweb\\Views\\Thietbi\\Danhsach.cshtml",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAmwHAAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-07T02:38:21.876Z"
+              "WhenOpened": "2025-05-13T13:15:57.964Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ForgetPass.cshtml",
-              "DocumentMoniker": "E:\\CS\\Web\\quanlythuquan_web\\Quanlythuquanweb\\Views\\Account\\ForgetPass.cshtml",
-              "RelativeDocumentMoniker": "Quanlythuquanweb\\Views\\Account\\ForgetPass.cshtml",
-              "ToolTip": "E:\\CS\\Web\\quanlythuquan_web\\Quanlythuquanweb\\Views\\Account\\ForgetPass.cshtml",
-              "RelativeToolTip": "Quanlythuquanweb\\Views\\Account\\ForgetPass.cshtml",
-              "ViewState": "AgIAACYAAAAAAAAAAAAwwD8AAABEAAAAAAAAAA==",
+              "Title": "UserProfile.cshtml",
+              "DocumentMoniker": "D:\\code\\Csharp\\quanlythuquan_web\\Quanlythuquanweb\\Views\\Home\\UserProfile.cshtml",
+              "RelativeDocumentMoniker": "Quanlythuquanweb\\Views\\Home\\UserProfile.cshtml",
+              "ToolTip": "D:\\code\\Csharp\\quanlythuquan_web\\Quanlythuquanweb\\Views\\Home\\UserProfile.cshtml",
+              "RelativeToolTip": "Quanlythuquanweb\\Views\\Home\\UserProfile.cshtml",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAqwHYAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-07T00:49:59.489Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SignUp.cshtml",
-              "DocumentMoniker": "E:\\CS\\Web\\quanlythuquan_web\\Quanlythuquanweb\\Views\\Account\\SignUp.cshtml",
-              "RelativeDocumentMoniker": "Quanlythuquanweb\\Views\\Account\\SignUp.cshtml",
-              "ToolTip": "E:\\CS\\Web\\quanlythuquan_web\\Quanlythuquanweb\\Views\\Account\\SignUp.cshtml",
-              "RelativeToolTip": "Quanlythuquanweb\\Views\\Account\\SignUp.cshtml",
-              "ViewState": "AgIAAE0AAAAAAAAAAAAwwGwAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-06T23:05:28.89Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "E:\\CS\\Web\\quanlythuquan_web\\Quanlythuquanweb\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "Quanlythuquanweb\\Controllers\\AccountController.cs",
-              "ToolTip": "E:\\CS\\Web\\quanlythuquan_web\\Quanlythuquanweb\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "Quanlythuquanweb\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAALAAAAAAAAAAAAAowNcAAABDAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T22:38:18.54Z",
+              "WhenOpened": "2025-05-13T13:15:31.178Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\code\\Csharp\\quanlythuquan_web\\Quanlythuquanweb\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Quanlythuquanweb\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\code\\Csharp\\quanlythuquan_web\\Quanlythuquanweb\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Quanlythuquanweb\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-13T13:15:28.157Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ChangePass.cshtml",
+              "DocumentMoniker": "D:\\code\\Csharp\\quanlythuquan_web\\Quanlythuquanweb\\Views\\Account\\ChangePass.cshtml",
+              "RelativeDocumentMoniker": "Quanlythuquanweb\\Views\\Account\\ChangePass.cshtml",
+              "ToolTip": "D:\\code\\Csharp\\quanlythuquan_web\\Quanlythuquanweb\\Views\\Account\\ChangePass.cshtml",
+              "RelativeToolTip": "Quanlythuquanweb\\Views\\Account\\ChangePass.cshtml",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAwwGcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-13T13:12:28.163Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ForgetPass.cshtml",
+              "DocumentMoniker": "D:\\code\\Csharp\\quanlythuquan_web\\Quanlythuquanweb\\Views\\Account\\ForgetPass.cshtml",
+              "RelativeDocumentMoniker": "Quanlythuquanweb\\Views\\Account\\ForgetPass.cshtml",
+              "ToolTip": "D:\\code\\Csharp\\quanlythuquan_web\\Quanlythuquanweb\\Views\\Account\\ForgetPass.cshtml",
+              "RelativeToolTip": "Quanlythuquanweb\\Views\\Account\\ForgetPass.cshtml",
+              "ViewState": "AgIAACYAAAAAAAAAAAAwwD8AAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002242|",
+              "WhenOpened": "2025-05-13T13:12:28.165Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SignUp.cshtml",
+              "DocumentMoniker": "D:\\code\\Csharp\\quanlythuquan_web\\Quanlythuquanweb\\Views\\Account\\SignUp.cshtml",
+              "RelativeDocumentMoniker": "Quanlythuquanweb\\Views\\Account\\SignUp.cshtml",
+              "ToolTip": "D:\\code\\Csharp\\quanlythuquan_web\\Quanlythuquanweb\\Views\\Account\\SignUp.cshtml",
+              "RelativeToolTip": "Quanlythuquanweb\\Views\\Account\\SignUp.cshtml",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAwwGEAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-13T13:12:28.45Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "D:\\code\\Csharp\\quanlythuquan_web\\Quanlythuquanweb\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Quanlythuquanweb\\Controllers\\AccountController.cs",
+              "ToolTip": "D:\\code\\Csharp\\quanlythuquan_web\\Quanlythuquanweb\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Quanlythuquanweb\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAM4AAAAAAAAAAAAIwOgAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T13:12:28.635Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\code\\Csharp\\quanlythuquan_web\\Quanlythuquanweb\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Quanlythuquanweb\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\code\\Csharp\\quanlythuquan_web\\Quanlythuquanweb\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Quanlythuquanweb\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T13:19:46.258Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ThietbiController.cs",
+              "DocumentMoniker": "D:\\code\\Csharp\\quanlythuquan_web\\Quanlythuquanweb\\Controllers\\ThietbiController.cs",
+              "RelativeDocumentMoniker": "Quanlythuquanweb\\Controllers\\ThietbiController.cs",
+              "ToolTip": "D:\\code\\Csharp\\quanlythuquan_web\\Quanlythuquanweb\\Controllers\\ThietbiController.cs",
+              "RelativeToolTip": "Quanlythuquanweb\\Controllers\\ThietbiController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABkAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T13:19:59.04Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DbConnection.cs",
+              "DocumentMoniker": "D:\\code\\Csharp\\quanlythuquan_web\\Quanlythuquanweb\\Helpers\\DbConnection.cs",
+              "RelativeDocumentMoniker": "Quanlythuquanweb\\Helpers\\DbConnection.cs",
+              "ToolTip": "D:\\code\\Csharp\\quanlythuquan_web\\Quanlythuquanweb\\Helpers\\DbConnection.cs",
+              "RelativeToolTip": "Quanlythuquanweb\\Helpers\\DbConnection.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAcwFsAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T13:12:28.146Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "Login.cshtml",
-              "DocumentMoniker": "E:\\CS\\Web\\quanlythuquan_web\\Quanlythuquanweb\\Views\\Account\\Login.cshtml",
+              "DocumentMoniker": "D:\\code\\Csharp\\quanlythuquan_web\\Quanlythuquanweb\\Views\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "Quanlythuquanweb\\Views\\Account\\Login.cshtml",
-              "ToolTip": "E:\\CS\\Web\\quanlythuquan_web\\Quanlythuquanweb\\Views\\Account\\Login.cshtml",
+              "ToolTip": "D:\\code\\Csharp\\quanlythuquan_web\\Quanlythuquanweb\\Views\\Account\\Login.cshtml",
               "RelativeToolTip": "Quanlythuquanweb\\Views\\Account\\Login.cshtml",
               "ViewState": "AgIAADAAAAAAAAAAAAAAAEUAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-06T22:39:06.11Z"
+              "WhenOpened": "2025-05-13T13:12:28.636Z"
             }
           ]
         }
