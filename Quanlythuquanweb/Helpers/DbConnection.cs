@@ -10,7 +10,7 @@ namespace Doanc_sharp.src.Helpers
 {
     public class DbConnection
     {
-        private string connStr = "server=localhost;user=root;database=quanlythuquan;port=3306;password=;";
+        private string connStr = "server=localhost;user=root;database=quanlythuquan;port=3306;password=;Charset=utf8";
         private MySqlConnection conn;
 
         public DbConnection()
