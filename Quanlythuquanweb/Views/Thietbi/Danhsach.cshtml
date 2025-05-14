@@ -308,8 +308,8 @@
         <div class="carousel">
             <img class="carousel-image" src="~/Resoucres/Images/banner1.png" alt="Banner 1">
             <img class="carousel-image" src="~/Resoucres/Images/banner2.png" alt="Banner 2">
-            <img class="carousel-image" src="~/Resoucres/Images/banner3.png" alt="Banner 3">
-            <img class="carousel-image" src="~/Resoucres/Images/banner4.png" alt="Banner 4">
+            <img class="carousel-image" src="~/Resoucres/Images/banner1.png" alt="Banner 3">
+            <img class="carousel-image" src="~/Resoucres/Images/banner2.png" alt="Banner 4">
         </div>
         <div class="carousel-buttons">
             <button onclick="prevSlide()">❮</button>
@@ -350,7 +350,7 @@
                                 <td>@tb.Tenthietbi</td>
                                 <td>@tb.Giathue</td>
                                 <td>
-                                    @if (tb.Trangthai.ToLower() == "đang trống")
+                                    @if (tb.Trangthai == "Đang trống")
                                     {
                                         <span style="color: green; font-weight: bold;">@tb.Trangthai</span>
                                     }
@@ -360,7 +360,7 @@
                                     }
                                 </td>
                                 <td>
-                                    @if (tb.Trangthai.ToLower().Trim() == "trống")
+                                    @if (tb.Trangthai == "Đang trống")
                                     {
                                         <a href="@Url.Action("DatCho", "Thietbi", new { mathietbi = tb.Mathietbi })" class="btn btn-primary">Đặt chỗ</a>
                                     }
